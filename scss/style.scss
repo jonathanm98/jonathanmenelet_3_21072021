@@ -17,6 +17,11 @@ header {
     }
     p {
         text-align: center;
-        // background-color: $primary;
+        background-color: #eaeaea;
+        padding: 18px 0;
+
+        i {
+            margin-right: 10px;
+        }
     }
 }

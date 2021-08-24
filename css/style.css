@@ -11,6 +11,11 @@ header img {
 }
 header p {
   text-align: center;
+  background-color: #eaeaea;
+  padding: 18px 0;
+}
+header p i {
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
