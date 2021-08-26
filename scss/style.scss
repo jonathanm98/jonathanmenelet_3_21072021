@@ -3,14 +3,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('../libs/misc.scss');
-@import url('../libs/reset.css');
-
-// Variables
-$primary: #9356DC;
-$secondary: #FF79DA;
-$tertiary: #99E2D0;
-$grey: #eaeaea;
+@import 'variables';
+@import 'reset';
 
 /* CSS basique */
 
