@@ -1,13 +1,23 @@
 /* Liens externes*/
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("../libs/reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("../libs/misc.scss");
+@import url("../libs/reset.css");
 /* CSS basique */
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+/* HEADER */
+header div {
+  padding: 20px 0;
+  box-shadow: 0px 10px 10px #eaeaea;
+}
 header img {
   width: 164px;
   text-align: center;
   display: flex;
-  margin: 20px auto;
+  margin: 0 auto;
 }
 header p {
   text-align: center;
@@ -16,6 +26,10 @@ header p {
 }
 header p i {
   margin-right: 10px;
+}
+
+footer h3 {
+  font-family: Shrikhand;
 }
 
 /*# sourceMappingURL=style.css.map */
