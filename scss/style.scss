@@ -85,10 +85,12 @@ header {
 
 /* MAIN */
 
+main {
+    padding-bottom: 50px;
+    background-color: $lightgrey;
+}
 .entete {
     text-align: center;
-    background-color: $lightgrey;
-    padding-bottom: 50px;
     
     h2 {
         width: 70%;
@@ -142,9 +144,9 @@ header {
             margin-left: 30px;
             margin-right: 30px;
         }
-        &:hover {
+        // &:hover {
             
-        }
+        // }
 
     }
 }
@@ -181,10 +183,23 @@ footer {
     padding: 0 5%;
     background-color: #353535;
     color: white;
+    padding-bottom: 30px;
     h3 {
         font-family: Shrikhand;
+        padding: 20px 0;
+        font-weight: 300;
     }
-    a {
-        color: white;
+    li {
+        padding-bottom: 6px;
+        .fa-hands-helping {
+            margin-right: 8px;
+        }
+        a {
+            color:white;
+        }
+        i {
+            font-size: 15px;
+            margin-right: 14px;
+        }
     }
 }

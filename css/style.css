@@ -33,10 +33,13 @@ header p i {
 }
 
 /* MAIN */
+main {
+  padding-bottom: 50px;
+  background-color: #f6f6f6;
+}
+
 .entete {
   text-align: center;
-  background-color: #f6f6f6;
-  padding-bottom: 50px;
 }
 .entete h2 {
   width: 70%;
@@ -84,6 +87,7 @@ header p i {
   margin-left: 30px;
   margin-right: 30px;
 }
+
 #restaurants {
   padding: 0 5%;
   margin: 0 auto;
@@ -112,12 +116,25 @@ footer {
   padding: 0 5%;
   background-color: #353535;
   color: white;
+  padding-bottom: 30px;
 }
 footer h3 {
   font-family: Shrikhand;
+  padding: 20px 0;
+  font-weight: 300;
 }
-footer a {
+footer li {
+  padding-bottom: 6px;
+}
+footer li .fa-hands-helping {
+  margin-right: 8px;
+}
+footer li a {
   color: white;
+}
+footer li i {
+  font-size: 15px;
+  margin-right: 14px;
 }
 
 /*# sourceMappingURL=style.css.map */
