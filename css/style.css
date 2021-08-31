@@ -1,7 +1,7 @@
 /* Liens externes*/
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("../css/reset.css");
+@import url("reset.css");
 /* CSS basique */
 * {
   font-family: "Roboto", sans-serif;
