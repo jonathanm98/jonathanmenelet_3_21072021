@@ -21,11 +21,13 @@ header {
     background-color: $grey;
 
     h1 {
-        font-family: Shrikhand, sans-serif;
         padding: 20px 0;
         box-shadow: 0px 1px 10px darkgray;
         background-color: #ffffff;
         text-align: center;
+        a {
+            font-family: Shrikhand;
+        }
     }
 
     img {
@@ -46,12 +48,10 @@ header {
 
 /* MAIN */
 
-main {
-    padding-bottom: 50px;
-}
 .entete {
     text-align: center;
     background-color: $lightgrey;
+    padding-bottom: 50px;
     
     h2 {
         width: 70%;
@@ -119,9 +119,11 @@ main {
     }
 }
 
-#restaurants {
+#restaurants { 
     padding: 0 5%;
+    padding-bottom: 50px;
     margin: 0 auto;
+    margin-bottom: 0;
     background-color: $lightgrey;
     figure {
         position: relative;
@@ -150,6 +152,12 @@ main {
         }
         figcaption {
             padding: 10px 10px;
+        }
+        i {
+            font-size: 1.5em;
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
         }
         // .new {
 

@@ -1,3 +1,63 @@
-i {
-    font-variant-numeric: inherit;
+
+/* Liens externes*/
+
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import 'variables';
+@import 'reset';
+
+/* HEADER */
+
+header {
+    .static {
+        display: flex;
+        padding: 17px 0 9px 0;
+        h1 {
+            font-family: Shrikhand;
+            font-weight: 100;
+            font-size: 31px;
+            margin: auto;
+        }
+        i {
+            font-size: 1.2em;
+            position: absolute;
+            left: 22px;
+            top: 25px;
+        }
+    }
+    img {
+        height: 220px;
+        width: 100%;
+        position: relative;
+    }
+}
+
+/* MAIN */
+
+main {
+    position: relative;
+    padding-top: 40px;
+    margin-top: -48px;
+    background-color: $lightgrey;
+    border-top-left-radius: 3em;
+    border-top-right-radius: 3em;
+    h1 {
+        @extend %width90;
+        font-family: Shrikhand;
+        font-weight: 100;
+        
+    }
+    .titre {
+        display: flex
+    }
+    section {
+        @extend %width90;
+        div {
+            border-radius: 1em;
+            background-color: white;
+            margin: 10px 0;
+            @extend %boxshadow;
+        }
+
+    }
 }

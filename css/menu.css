@@ -1,5 +1,75 @@
-i {
-  font-variant-numeric: inherit;
+/* Liens externes*/
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/**/
+main section div {
+  box-shadow: 0px 4px 8px darkgrey;
+}
+
+main section, main h1 {
+  width: 90%;
+  margin: auto;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ol, ul, li {
+  list-style-type: none;
+}
+
+/* HEADER */
+header .static {
+  display: flex;
+  padding: 17px 0 9px 0;
+}
+header .static h1 {
+  font-family: Shrikhand;
+  font-weight: 100;
+  font-size: 31px;
+  margin: auto;
+}
+header .static i {
+  font-size: 1.2em;
+  position: absolute;
+  left: 22px;
+  top: 25px;
+}
+header img {
+  height: 220px;
+  width: 100%;
+  position: relative;
+}
+
+/* MAIN */
+main {
+  position: relative;
+  padding-top: 40px;
+  margin-top: -48px;
+  background-color: #f6f6f6;
+  border-top-left-radius: 3em;
+  border-top-right-radius: 3em;
+}
+main h1 {
+  font-family: Shrikhand;
+  font-weight: 100;
+}
+main .titre {
+  display: flex;
+}
+main section div {
+  border-radius: 1em;
+  background-color: white;
+  margin: 10px 0;
 }
 
 /*# sourceMappingURL=menu.css.map */
