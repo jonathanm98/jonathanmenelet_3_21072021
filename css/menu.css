@@ -134,7 +134,6 @@ main section a .checked {
   width: 60px;
   background-color: #99E2D0;
   text-align: center;
-  vertical-align: auto;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
