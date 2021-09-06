@@ -70,6 +70,7 @@ header img {
   height: 220px;
   width: 100%;
   position: relative;
+  object-fit: cover;
 }
 
 /* MAIN */
@@ -120,7 +121,7 @@ main section a h6 {
 main section a .txt {
   font-size: 0.95em;
   font-weight: 100;
-  text-overflow: ellipsis;
+  overflow: hidden;
 }
 main section a p:not(.txt) {
   font-weight: bold;
@@ -136,12 +137,22 @@ main section a .checked {
   text-align: center;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  margin-top: -34px;
+  margin-right: -12px;
 }
 main section a .checked i {
   font-size: 1.2em;
 }
 main section a:hover .checked {
   display: initial;
+}
+main section a:hover .txt {
+  height: 20px;
+  width: 200px;
+}
+main section a:hover i {
+  transition: transform 450ms ease-in-out;
+  transform: scale(1.1);
 }
 main .btn {
   width: 50%;
@@ -172,6 +183,36 @@ footer li a {
 footer li i {
   font-size: 15px;
   margin-right: 14px;
+}
+
+@media screen and (min-width: 767.7px) {
+  main section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  main section h5 {
+    width: 100%;
+  }
+  main section div {
+    width: 49%;
+  }
+}
+@media screen and (min-width: 1199.7px) {
+  main section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  main section h5 {
+    width: 100%;
+  }
+  main section div {
+    width: 32%;
+  }
+  main .btn {
+    width: 200px;
+  }
 }
 
 /*# sourceMappingURL=menu.css.map */

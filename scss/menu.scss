@@ -38,6 +38,7 @@ header {
         height: 220px;
         width: 100%;
         position: relative;
+        object-fit: cover;
     }
 }
 
@@ -96,15 +97,12 @@ main {
             .txt {
                 font-size: 0.95em;
                 font-weight: 100;
-                text-overflow: ellipsis;
+                overflow: hidden;
             }
             p:not(.txt) {
                 font-weight: bold;
             }
             .checked {
-                i {
-                    font-size: 1.2em;
-                }
                 display: none;
                 box-shadow: none;
                 color: white;
@@ -115,11 +113,23 @@ main {
                 text-align: center;
                 border-top-left-radius: 0;
                 border-bottom-left-radius: 0;
-                
+                margin-top: -34px;
+                margin-right: -12px;
+                i {
+                    font-size: 1.2em;
+                }
             }
             &:hover {
                 .checked {
                     display: initial;
+                }
+                .txt {
+                    height: 20px;
+                    width: 200px;
+                }
+                i {
+                    transition: transform 450ms ease-in-out;
+                    transform: scale(1.1);
                 }
             }
         }
@@ -156,6 +166,45 @@ footer {
         i {
             font-size: 15px;
             margin-right: 14px;
+        }
+    }
+}
+
+@media screen and (min-width: 767.7px) {
+        main {
+
+            section {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                h5 {
+                    width: 100%;
+                }
+                div {
+                    width: 49%;
+                }
+            }
+        }
+}
+
+@media screen and (min-width: 1199.7px) {
+    main {
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            h5 {
+                width: 100%;
+            }
+            div {
+                width: 32%;
+            }
+        }
+        .btn {
+            width: 200px;
         }
     }
 }
