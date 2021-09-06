@@ -2,8 +2,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 /**/
-#restaurants figure, .fonctionnement li, .entete p {
+#restaurants figure, .fonctionnement li, .entete .btn {
   box-shadow: 0px 4px 8px darkgrey;
+}
+
+.entete .btn {
+  color: #fff;
+  border-radius: 2em;
+  padding: 18px 5px;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  transition: transform 450ms, box-shadow 450ms;
+}
+.entete .btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 15px darkgrey;
 }
 
 /* RESET */
@@ -77,15 +92,6 @@ header p i {
   font-weight: 100;
   padding-bottom: 25px;
 }
-.entete p {
-  color: #fff;
-  border-radius: 2em;
-  padding: 18px 5px;
-  background: linear-gradient(170deg, #FF79DA, #9356DC);
-  width: 70%;
-  margin: 0 auto;
-}
-
 .fonctionnement {
   padding: 0 5%;
   margin: 0 auto;
@@ -188,6 +194,65 @@ footer li a {
 footer li i {
   font-size: 15px;
   margin-right: 14px;
+}
+
+@media screen and (min-width: 767.7px) {
+  .entete .btn {
+    max-width: 250px;
+  }
+
+  .fonctionnement ol {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .fonctionnement li {
+    width: 48%;
+  }
+  .fonctionnement h2 {
+    width: 100%;
+  }
+
+  #restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #restaurants figure {
+    width: 49%;
+  }
+  #restaurants h2 {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1199.7px) {
+  .entete .btn {
+    max-width: 250px;
+  }
+
+  .fonctionnement ol {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .fonctionnement li {
+    width: 32%;
+  }
+  .fonctionnement h2 {
+    width: 100%;
+  }
+
+  #restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #restaurants figure {
+    width: 24%;
+  }
+  #restaurants h2 {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

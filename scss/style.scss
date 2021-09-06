@@ -185,3 +185,74 @@ footer {
         }
     }
 }
+
+@media screen and (min-width: 767.7px) {
+
+    .entete {
+        .btn {
+            max-width: 250px; 
+        }
+    }
+
+    .fonctionnement {
+        ol {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        li {
+            width: 48%;
+        }
+        h2 {
+            width: 100%;
+        }
+    }
+    #restaurants {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        figure {
+            width: 49%;
+        }
+        h2 {
+            width: 100%;
+        }
+    }
+    
+}
+
+@media screen and (min-width: 1199.7px) {
+
+    .entete {
+        .btn {
+            max-width: 250px; 
+        }
+    }
+
+    .fonctionnement {
+        ol {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        li {
+            width: 32%;
+        }
+        h2 {
+            width: 100%;
+        }
+    }
+    #restaurants {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        figure {
+            width: 24%;
+        }
+        h2 {
+            width: 100%;
+        }
+    }
+}
