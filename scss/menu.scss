@@ -81,6 +81,7 @@ main {
             margin-top: 16px;
             height: 70px;
             @extend %boxshadow;
+            
         }
         a {
             display: flex;
@@ -95,9 +96,32 @@ main {
             .txt {
                 font-size: 0.95em;
                 font-weight: 100;
+                text-overflow: ellipsis;
             }
             p:not(.txt) {
                 font-weight: bold;
+            }
+            .checked {
+                i {
+                    font-size: 1.2em;
+                }
+                display: none;
+                box-shadow: none;
+                color: white;
+                height: 70px;
+                line-height: 70px;
+                width: 60px;
+                background-color: $tertiary;
+                text-align: center;
+                vertical-align: auto;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                
+            }
+            &:hover {
+                .checked {
+                    display: initial;
+                }
             }
         }
 
