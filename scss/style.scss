@@ -67,14 +67,8 @@ header {
         font-weight: 100;
         padding-bottom: 25px;
     }
-    p {
-        color: #fff;
-        border-radius: 2em;
-        padding: 18px 5px;
-        background: linear-gradient(170deg, $secondary, $primary);
-        width: 70%;
-        margin: 0 auto;
-        @extend %boxshadow;
+    .btn {
+        @extend %boxshadow, %btn;
     }
 }
 

@@ -6,6 +6,13 @@
 @import 'variables';
 @import 'reset';
 
+
+/* GENERAL */
+
+* {
+    font-family: Roboto, sans-serif;
+}
+
 /* HEADER */
 
 header {
@@ -13,10 +20,12 @@ header {
         display: flex;
         padding: 17px 0 9px 0;
         h1 {
-            font-family: Shrikhand;
             font-weight: 100;
             font-size: 31px;
             margin: auto;
+        }
+        a {
+            font-family: Shrikhand, sans-serif;
         }
         i {
             font-size: 1.2em;
@@ -37,27 +46,93 @@ header {
 main {
     position: relative;
     padding-top: 40px;
+    padding-bottom: 40px;
     margin-top: -48px;
     background-color: $lightgrey;
     border-top-left-radius: 3em;
     border-top-right-radius: 3em;
-    h1 {
+    h2 {
         @extend %width90;
-        font-family: Shrikhand;
+        font-family: Shrikhand, sans-serif;
         font-weight: 100;
         
     }
     .titre {
-        display: flex
+            display: flex;
+            @extend %width90;
+        i {
+            margin:auto;
+            padding-right: 15px;
+            font-size: 1.3em;
+        }
     }
     section {
         @extend %width90;
+
+        h5 {
+            font-size: 1em;
+            font-weight: 100;
+            margin-top: 25px;
+            border-bottom: 3px solid $tertiary;
+        }
         div {
             border-radius: 1em;
             background-color: white;
-            margin: 10px 0;
+            margin-top: 16px;
+            height: 70px;
             @extend %boxshadow;
         }
+        a {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0 10px;
+            padding-top: 14px;
+            h6 {
+                width: 100%;
+                font-size: 1.05em;
+            }
+            .txt {
+                font-size: 0.95em;
+                font-weight: 100;
+            }
+            p:not(.txt) {
+                font-weight: bold;
+            }
+        }
 
+    }
+    .btn {
+        @extend %btn;
+        width: 50%;
+        margin: 50px auto;
+        margin-bottom: 0px;
+    }
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #353535;
+    color: white;
+    padding: 20px 5%;
+    h3 {
+        font-family: Shrikhand, sans-serif;
+        padding: 20px 0;
+        font-weight: 300;
+    }
+    li {
+        padding-bottom: 6px;
+        .fa-hands-helping {
+            margin-right: 8px;
+        }
+        a {
+            color:white;
+        }
+        i {
+            font-size: 15px;
+            margin-right: 14px;
+        }
     }
 }

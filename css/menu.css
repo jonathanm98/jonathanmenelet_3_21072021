@@ -6,9 +6,24 @@ main section div {
   box-shadow: 0px 4px 8px darkgrey;
 }
 
-main section, main h1 {
+main section, main .titre, main h2 {
   width: 90%;
   margin: auto;
+}
+
+main .btn {
+  color: #fff;
+  border-radius: 2em;
+  padding: 18px 5px;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  transition: transform 450ms cubic-bezier(0.28, 0.15, 0.27, 0.99), box-shadow 450ms cubic-bezier(0.28, 0.15, 0.27, 0.99);
+}
+main .btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 15px darkgrey;
 }
 
 /* RESET */
@@ -27,16 +42,23 @@ ol, ul, li {
   list-style-type: none;
 }
 
+/* GENERAL */
+* {
+  font-family: Roboto, sans-serif;
+}
+
 /* HEADER */
 header .static {
   display: flex;
   padding: 17px 0 9px 0;
 }
 header .static h1 {
-  font-family: Shrikhand;
   font-weight: 100;
   font-size: 31px;
   margin: auto;
+}
+header .static a {
+  font-family: Shrikhand, sans-serif;
 }
 header .static i {
   font-size: 1.2em;
@@ -54,22 +76,83 @@ header img {
 main {
   position: relative;
   padding-top: 40px;
+  padding-bottom: 40px;
   margin-top: -48px;
   background-color: #f6f6f6;
   border-top-left-radius: 3em;
   border-top-right-radius: 3em;
 }
-main h1 {
-  font-family: Shrikhand;
+main h2 {
+  font-family: Shrikhand, sans-serif;
   font-weight: 100;
 }
 main .titre {
   display: flex;
 }
+main .titre i {
+  margin: auto;
+  padding-right: 15px;
+  font-size: 1.3em;
+}
+main section h5 {
+  font-size: 1em;
+  font-weight: 100;
+  margin-top: 25px;
+  border-bottom: 3px solid #99E2D0;
+}
 main section div {
   border-radius: 1em;
   background-color: white;
-  margin: 10px 0;
+  margin-top: 16px;
+  height: 70px;
+}
+main section a {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 10px;
+  padding-top: 14px;
+}
+main section a h6 {
+  width: 100%;
+  font-size: 1.05em;
+}
+main section a .txt {
+  font-size: 0.95em;
+  font-weight: 100;
+}
+main section a p:not(.txt) {
+  font-weight: bold;
+}
+main .btn {
+  width: 50%;
+  margin: 50px auto;
+  margin-bottom: 0px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 20px 5%;
+}
+footer h3 {
+  font-family: Shrikhand, sans-serif;
+  padding: 20px 0;
+  font-weight: 300;
+}
+footer li {
+  padding-bottom: 6px;
+}
+footer li .fa-hands-helping {
+  margin-right: 8px;
+}
+footer li a {
+  color: white;
+}
+footer li i {
+  font-size: 15px;
+  margin-right: 14px;
 }
 
 /*# sourceMappingURL=menu.css.map */
