@@ -12,6 +12,33 @@ main section, main .titre, main h2 {
 }
 
 /* ANIMATIONS */
+/*Animations Loader*/
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  80% {
+    transform: rotate(720deg);
+  }
+  100% {
+    transform: rotate(1440deg);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes load {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*Animations Boutons*/
 main .btn {
   color: #fff;
   border-radius: 2em;
@@ -45,7 +72,8 @@ main .btn:hover {
     transform: rotate(360deg);
   }
 }
-@keyframes apear {
+/*Animations menu apparition*/
+@keyframes appear {
   0% {
     transform-origin: 50% top;
     opacity: 0.1;
@@ -135,7 +163,7 @@ main section div {
   background-color: white;
   margin-top: 16px;
   height: 70px;
-  animation-name: apear;
+  animation-name: appear;
   animation-duration: 2000ms;
 }
 main section a {

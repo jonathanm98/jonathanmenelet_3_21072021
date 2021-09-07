@@ -7,6 +7,33 @@
 }
 
 /* ANIMATIONS */
+/*Animations Loader*/
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  80% {
+    transform: rotate(720deg);
+  }
+  100% {
+    transform: rotate(1440deg);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes load {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*Animations Boutons*/
 .entete .btn {
   color: #fff;
   border-radius: 2em;
@@ -40,7 +67,8 @@
     transform: rotate(360deg);
   }
 }
-@keyframes apear {
+/*Animations menu apparition*/
+@keyframes appear {
   0% {
     transform-origin: 50% top;
     opacity: 0.1;
@@ -76,6 +104,11 @@ html {
 }
 
 /* LOADER */
+body {
+  animation-name: load;
+  animation-duration: 3000ms;
+}
+
 .loading {
   border: 10px solid #f3f3f3;
   border-top: 10px solid #99E2D0;
@@ -96,32 +129,6 @@ html {
   animation-duration: 3000ms;
 }
 
-/*Animations Loader*/
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-    opacity: 1;
-  }
-  80% {
-    transform: rotate(720deg);
-  }
-  100% {
-    transform: rotate(1440deg);
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-@keyframes load {
-  0% {
-    opacity: 0;
-  }
-  99% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 /* HEADER */
 header {
   background-color: #eaeaea;
