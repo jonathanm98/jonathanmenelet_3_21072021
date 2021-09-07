@@ -8,9 +8,10 @@
 
 /* CSS basique */
 
-body {
-    font-family: 'Roboto', sans-serif;
+.bordure {
+    @extend %bordure;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -19,6 +20,7 @@ html {
 body {
     animation-name: load;
     animation-duration: 3000ms;
+    font-family: 'Roboto', sans-serif;
 }
 
 .loading {
@@ -115,20 +117,22 @@ header {
         
 
         span {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
             background-color: $primary;
             color: $white;
-            height: 25px;
-            width: 25px;
-            line-height: 25px;
+            height: 26px;
+            width: 26px;
             border-radius: 100%;
             text-align: center;
-            margin-left: -6px;
+            margin-left: -13px;
         }
 
         i {
             margin-left: 30px;
             margin-right: 30px;
+            color: #7e7e7e;
         }
         &:hover {
             background-color: #f5edff;
@@ -139,51 +143,54 @@ header {
     }
 }
 
-#restaurants { 
-    padding: 0 5%;
-    padding-bottom: 50px;
-    margin: 0 auto;
-    margin-bottom: 0;
-    background-color: $lightgrey;
-    figure {
-        position: relative;
-        .new {
-            position: absolute;
-            padding: 6px 10px;
-            top: 12px;
-            right: 12px;
-            background-color: $tertiary;
-            color: #008766;
-        }
-    }
-    h2 {
-        padding-top: 50px;
-    }
-    figure {
-        border-radius: 1em;
-        @extend %boxshadow;
-        margin: 20px 0;
-        img {
-            width: 100%;
-            height: 172px;
-            object-fit: cover;
-            border-top-left-radius: 1em;
-            border-top-right-radius: 1em;
-        }
-        figcaption {
-            padding: 10px 10px;
-        }
-        i {
-            font-size: 1.5em;
-            position: absolute;
-            right: 20px;
-            bottom: 20px;
-        }
-        // .new {
+// #restaurants {
+//     padding: 0 5%;
+//     padding-bottom: 50px;
+//     margin: 0 auto;
+//     margin-bottom: 0;
+//     background-color: $lightgrey;
+//     justify-content: space-between;
+//     h2 {
+//         padding-top: 50px;
+//     }
+//     figure {
+//         @extend %bordure;
+//     }
+//     a {
+//         @extend %bordure;
+//         display: inline-flex;
+//         // position: relative;
+//         border-radius: 1em;
+//         @extend %boxshadow;
+//         margin: 20px 0;
+//         .new {
+//             position: absolute;
+//             padding: 6px 10px;
+//             top: 12px;
+//             right: 12px;
+//             background-color: $tertiary;
+//             color: #008766;
+//         }
+//         img {
+//             width: 100%;
+//             height: 172px;
+//             object-fit: cover;
+//             border-top-left-radius: 1em;
+//             border-top-right-radius: 1em;
+//         }
+//         figcaption {
+//             padding: 10px 10px;
+//         }
+//         i {
+//             font-size: 1.5em;
+//             position: absolute;
+//             right: 20px;
+//             bottom: 20px;
+//         }
+//     }
+// }
 
-        // }
-    }
-}
+#restaurants
 
 /* FOOTER */
 
@@ -233,18 +240,18 @@ footer {
             width: 100%;
         }
     }
-    #restaurants {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+    // #restaurants {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     justify-content: space-between;
 
-        figure {
-            width: 49%;
-        }
-        h2 {
-            width: 100%;
-        }
-    }
+    //     a {
+    //         width: 47%;
+    //     }
+    //     h2 {
+    //         width: 100%;
+    //     }
+    // }
     
 }
 
@@ -269,16 +276,16 @@ footer {
             width: 100%;
         }
     }
-    #restaurants {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+    // #restaurants {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     justify-content: space-between;
 
-        figure {
-            width: 24%;
-        }
-        h2 {
-            width: 100%;
-        }
-    }
+    //     figure {
+    //         width: 24%;
+    //     }
+    //     h2 {
+    //         width: 100%;
+    //     }
+    // }
 }

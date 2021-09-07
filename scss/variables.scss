@@ -1,3 +1,7 @@
+%bordure {
+    border: 1px solid red;
+}
+
 // Variables
 $primary: #9356DC;
 $secondary: #FF79DA;
@@ -61,10 +65,11 @@ $rosegrey: #000;
     width: 70%;
     text-align: center;
     margin: auto;
-    transition: transform 450ms, box-shadow 450ms;
+    transition: all 450ms;
     &:hover {
-        transform: scale(1.1);
-        box-shadow: 0px 00px 15px $darkgrey;
+        // transform: scale(1.1);
+        background: linear-gradient(170deg, lighten($secondary, 5%), lighten($primary, 5%)) ;
+        box-shadow: 0px 5px 15px darken($darkgrey, 5%);
     }
 }
 

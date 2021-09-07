@@ -1,8 +1,12 @@
 /* Liens externes*/
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.bordure {
+  border: 1px solid red;
+}
+
 /**/
-#restaurants figure, .fonctionnement li, .entete .btn {
+.fonctionnement li, .entete .btn {
   box-shadow: 0px 4px 8px darkgrey;
 }
 
@@ -42,11 +46,11 @@
   width: 70%;
   text-align: center;
   margin: auto;
-  transition: transform 450ms, box-shadow 450ms;
+  transition: all 450ms;
 }
 .entete .btn:hover {
-  transform: scale(1.1);
-  box-shadow: 0px 0px 15px darkgrey;
+  background: linear-gradient(170deg, #ff93e1, #a16be0);
+  box-shadow: 0px 5px 15px #9c9c9c;
 }
 
 @keyframes check {
@@ -95,10 +99,6 @@ ol, ul, li {
 }
 
 /* CSS basique */
-body {
-  font-family: "Roboto", sans-serif;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -107,6 +107,7 @@ html {
 body {
   animation-name: load;
   animation-duration: 3000ms;
+  font-family: "Roboto", sans-serif;
 }
 
 .loading {
@@ -190,19 +191,21 @@ header p i {
   border-radius: 1.5em;
 }
 .fonctionnement li span {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background-color: #9356DC;
   color: #fff;
-  height: 25px;
-  width: 25px;
-  line-height: 25px;
+  height: 26px;
+  width: 26px;
   border-radius: 100%;
   text-align: center;
-  margin-left: -6px;
+  margin-left: -13px;
 }
 .fonctionnement li i {
   margin-left: 30px;
   margin-right: 30px;
+  color: #7e7e7e;
 }
 .fonctionnement li:hover {
   background-color: #f5edff;
@@ -211,70 +214,27 @@ header p i {
   color: #9356DC;
 }
 
-#restaurants {
-  padding: 0 5%;
-  padding-bottom: 50px;
-  margin: 0 auto;
-  margin-bottom: 0;
-  background-color: #f6f6f6;
-}
-#restaurants figure {
-  position: relative;
-}
-#restaurants figure .new {
-  position: absolute;
-  padding: 6px 10px;
-  top: 12px;
-  right: 12px;
-  background-color: #99E2D0;
-  color: #008766;
-}
-#restaurants h2 {
-  padding-top: 50px;
-}
-#restaurants figure {
-  border-radius: 1em;
-  margin: 20px 0;
-}
-#restaurants figure img {
-  width: 100%;
-  height: 172px;
-  object-fit: cover;
-  border-top-left-radius: 1em;
-  border-top-right-radius: 1em;
-}
-#restaurants figure figcaption {
-  padding: 10px 10px;
-}
-#restaurants figure i {
-  font-size: 1.5em;
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-}
-
-/* FOOTER */
-footer {
+#restaurants footer {
   padding: 0 5%;
   background-color: #353535;
   color: white;
   padding-bottom: 30px;
 }
-footer h3 {
+#restaurants footer h3 {
   font-family: Shrikhand, sans-serif;
   padding: 20px 0;
   font-weight: 300;
 }
-footer li {
+#restaurants footer li {
   padding-bottom: 6px;
 }
-footer li .fa-hands-helping {
+#restaurants footer li .fa-hands-helping {
   margin-right: 8px;
 }
-footer li a {
+#restaurants footer li a {
   color: white;
 }
-footer li i {
+#restaurants footer li i {
   font-size: 15px;
   margin-right: 14px;
 }
@@ -295,18 +255,6 @@ footer li i {
   .fonctionnement h2 {
     width: 100%;
   }
-
-  #restaurants {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  #restaurants figure {
-    width: 49%;
-  }
-  #restaurants h2 {
-    width: 100%;
-  }
 }
 @media screen and (min-width: 1199.7px) {
   .entete .btn {
@@ -322,18 +270,6 @@ footer li i {
     width: 32%;
   }
   .fonctionnement h2 {
-    width: 100%;
-  }
-
-  #restaurants {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  #restaurants figure {
-    width: 24%;
-  }
-  #restaurants h2 {
     width: 100%;
   }
 }

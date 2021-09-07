@@ -47,11 +47,11 @@ main .btn {
   width: 70%;
   text-align: center;
   margin: auto;
-  transition: transform 450ms, box-shadow 450ms;
+  transition: all 450ms;
 }
 main .btn:hover {
-  transform: scale(1.1);
-  box-shadow: 0px 0px 15px darkgrey;
+  background: linear-gradient(170deg, #ff93e1, #a16be0);
+  box-shadow: 0px 5px 15px #9c9c9c;
 }
 
 @keyframes check {
@@ -152,11 +152,16 @@ main .titre i {
   padding-right: 15px;
   font-size: 1.3em;
 }
+main section hr {
+  width: 20px;
+  border: 0;
+  border-top: 3px solid #99E2D0;
+  margin-right: 1000px;
+}
 main section h5 {
   font-size: 1em;
   font-weight: 100;
   margin-top: 25px;
-  border-bottom: 3px solid #99E2D0;
 }
 main section div {
   border-radius: 1em;

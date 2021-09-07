@@ -71,12 +71,17 @@ main {
     }
     section {
         @extend %width90;
-
+        hr {
+            width: 20px;
+            border: 0;
+            border-top: 3px solid $tertiary;
+            margin-right: 1000px;
+        }
         h5 {
             font-size: 1em;
             font-weight: 100;
             margin-top: 25px;
-            border-bottom: 3px solid $tertiary;
+            // border-bottom: 3px solid $tertiary;
         }
         div {
             border-radius: 1em;
