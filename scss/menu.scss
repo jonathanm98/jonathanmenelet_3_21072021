@@ -13,6 +13,8 @@
     font-family: Roboto, sans-serif;
 }
 
+
+
 /* HEADER */
 
 header {
@@ -82,6 +84,8 @@ main {
             margin-top: 16px;
             height: 70px;
             @extend %boxshadow;
+            animation-name: appear;
+            animation-duration: 2000ms;
             
         }
         a {
@@ -120,18 +124,29 @@ main {
                 }
             }
             &:hover {
+                
                 .checked {
                     display: initial;
+                    animation-name: check;
+                    animation-duration: 1000ms;
+                    transform: scaleX(1);
                 }
                 .txt {
                     height: 20px;
-                    width: 200px;
+                    width: 290px;
                 }
                 i {
-                    transition: transform 450ms ease-in-out;
-                    transform: scale(1.1);
+                    animation-name: check-rotate;
+                    animation-duration: 1000ms;
+                    animation-delay: 250ms;
                 }
             }
+            &:active {
+                .checked {
+                    display: initial
+                }
+            }
+
         }
 
     }

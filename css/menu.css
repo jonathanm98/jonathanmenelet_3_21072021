@@ -11,6 +11,7 @@ main section, main .titre, main h2 {
   margin: auto;
 }
 
+/* ANIMATIONS */
 main .btn {
   color: #fff;
   border-radius: 2em;
@@ -26,6 +27,34 @@ main .btn:hover {
   box-shadow: 0px 0px 15px darkgrey;
 }
 
+@keyframes check {
+  0% {
+    transform-origin: 100% 50%;
+    opacity: 0.1;
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes check-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes apear {
+  0% {
+    transform-origin: 50% top;
+    opacity: 0.1;
+    transform: scaley(0);
+  }
+  100% {
+    transform: scaley(1);
+  }
+}
 /* RESET */
 * {
   margin: 0;
@@ -106,6 +135,8 @@ main section div {
   background-color: white;
   margin-top: 16px;
   height: 70px;
+  animation-name: apear;
+  animation-duration: 2000ms;
 }
 main section a {
   display: flex;
@@ -145,14 +176,21 @@ main section a .checked i {
 }
 main section a:hover .checked {
   display: initial;
+  animation-name: check;
+  animation-duration: 1000ms;
+  transform: scaleX(1);
 }
 main section a:hover .txt {
   height: 20px;
-  width: 200px;
+  width: 290px;
 }
 main section a:hover i {
-  transition: transform 450ms ease-in-out;
-  transform: scale(1.1);
+  animation-name: check-rotate;
+  animation-duration: 1000ms;
+  animation-delay: 250ms;
+}
+main section a:active .checked {
+  display: initial;
 }
 main .btn {
   width: 50%;
