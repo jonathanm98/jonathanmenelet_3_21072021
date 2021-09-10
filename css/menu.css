@@ -1,7 +1,33 @@
 /* Liens externes*/
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-/**/
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ol, ul, li {
+  list-style-type: none;
+}
+
+/*  */
+main section div {
+  box-shadow: 0px 4px 8px darkgrey;
+}
+
+main section, main .titre, main h2 {
+  width: 90%;
+  margin: auto;
+}
+
+/*  */
 main section div {
   box-shadow: 0px 4px 8px darkgrey;
 }
@@ -13,20 +39,6 @@ main section, main .titre, main h2 {
 
 /* ANIMATIONS */
 /*Animations Loader*/
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-    opacity: 1;
-  }
-  80% {
-    transform: rotate(720deg);
-  }
-  100% {
-    transform: rotate(1440deg);
-    opacity: 0;
-    visibility: hidden;
-  }
-}
 @keyframes load {
   0% {
     opacity: 0;
@@ -36,6 +48,23 @@ main section, main .titre, main h2 {
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  80% {
+    transform: rotate(720deg);
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(1440deg);
+    display: none;
+    opacity: 0;
   }
 }
 /*Animations Boutons*/
@@ -83,22 +112,6 @@ main .btn:hover {
     transform: scaley(1);
   }
 }
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-ol, ul, li {
-  list-style-type: none;
-}
-
 /* GENERAL */
 body {
   font-family: Roboto, sans-serif;

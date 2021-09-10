@@ -3,8 +3,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import 'variables';
 @import 'reset';
+@import 'variables';
+@import 'annimations';
 
 /* CSS basique */
 
@@ -18,10 +19,12 @@ html {
 
 /* LOADER */
 body {
-    animation-name: load;
-    animation-duration: 3000ms;
     font-family: 'Roboto', sans-serif;
-}
+    // .fullpage {
+    //     animation-name: load;
+    //     animation-duration: 3000ms;
+    // }
+} 
 
 .loading {
     border: 10px solid #f3f3f3;
@@ -39,6 +42,7 @@ body {
 
     animation-name: spin;
     animation-duration: 3000ms;
+    animation-fill-mode: forwards;
 }
 
 
@@ -143,54 +147,51 @@ header {
     }
 }
 
-// #restaurants {
-//     padding: 0 5%;
-//     padding-bottom: 50px;
-//     margin: 0 auto;
-//     margin-bottom: 0;
-//     background-color: $lightgrey;
-//     justify-content: space-between;
-//     h2 {
-//         padding-top: 50px;
-//     }
-//     figure {
-//         @extend %bordure;
-//     }
-//     a {
-//         @extend %bordure;
-//         display: inline-flex;
-//         // position: relative;
-//         border-radius: 1em;
-//         @extend %boxshadow;
-//         margin: 20px 0;
-//         .new {
-//             position: absolute;
-//             padding: 6px 10px;
-//             top: 12px;
-//             right: 12px;
-//             background-color: $tertiary;
-//             color: #008766;
-//         }
-//         img {
-//             width: 100%;
-//             height: 172px;
-//             object-fit: cover;
-//             border-top-left-radius: 1em;
-//             border-top-right-radius: 1em;
-//         }
-//         figcaption {
-//             padding: 10px 10px;
-//         }
-//         i {
-//             font-size: 1.5em;
-//             position: absolute;
-//             right: 20px;
-//             bottom: 20px;
-//         }
-//     }
-// }
-
-#restaurants
+#restaurants {
+    padding: 0 5%;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    margin-bottom: 0;
+    background-color: $lightgrey;
+    justify-content: space-between;
+    
+    h2 {
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+    .vignette {
+        display: block;
+        background-color: $white;
+        margin-bottom: 50px;
+        border-radius: 1em;
+        position: relative;
+        img {
+            width: 100%;
+            height: 172px;
+            object-fit: cover;
+            border-top-left-radius: 1em;
+            border-top-right-radius: 1em;
+        }
+        .new {
+            position: absolute;
+            padding: 6px 10px;
+            top: 12px;
+            right: 12px;
+            background-color: $tertiary;
+            color: #008766;
+        }
+        figcaption {
+            padding: 10px 10px;
+            position: relative;
+            i {
+                font-size: 1.5em;
+                position: absolute;
+                right: 20px;
+                bottom: 20px;
+            }
+        }
+    }
+}
 
 /* FOOTER */
 
@@ -240,22 +241,32 @@ footer {
             width: 100%;
         }
     }
-    // #restaurants {
-    //     display: flex;
-    //     flex-wrap: wrap;
-    //     justify-content: space-between;
+    #restaurants {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
 
-    //     a {
-    //         width: 47%;
-    //     }
-    //     h2 {
-    //         width: 100%;
-    //     }
-    // }
+        a {
+            width: 47%;
+        }
+        h2 {
+            width: 100%;
+        }
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 5%;
+        padding-top: 25px;
+        h3 {
+            font-size: 2.4em;
+        }
+    }
     
 }
 
-@media screen and (min-width: 1199.7px) {
+@media screen and (min-width: 1023.7px) {
 
     .entete {
         .btn {
@@ -276,16 +287,26 @@ footer {
             width: 100%;
         }
     }
-    // #restaurants {
-    //     display: flex;
-    //     flex-wrap: wrap;
-    //     justify-content: space-between;
+    #restaurants {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
 
-    //     figure {
-    //         width: 24%;
-    //     }
-    //     h2 {
-    //         width: 100%;
-    //     }
-    // }
+        a {
+            width: 24%;
+        }
+        h2 {
+            width: 100%;
+        }
+    }
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        ul {
+            margin-top: 15px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
 }

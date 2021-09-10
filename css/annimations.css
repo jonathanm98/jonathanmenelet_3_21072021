@@ -1,0 +1,63 @@
+/*  */
+/* ANIMATIONS */
+/*Animations Loader*/
+@keyframes load {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  80% {
+    transform: rotate(720deg);
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(1440deg);
+    display: none;
+    opacity: 0;
+  }
+}
+/*Animations Boutons*/
+@keyframes check {
+  0% {
+    transform-origin: 100% 50%;
+    opacity: 0.1;
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes check-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*Animations menu apparition*/
+@keyframes appear {
+  0% {
+    transform-origin: 50% top;
+    opacity: 0.1;
+    transform: scaley(0);
+  }
+  100% {
+    transform: scaley(1);
+  }
+}
+
+/*# sourceMappingURL=annimations.css.map */
