@@ -26,6 +26,22 @@ ol, ul, li {
   box-shadow: 0px 4px 8px darkgrey;
 }
 
+.entete .btn {
+  display: block;
+  color: #fff;
+  border-radius: 2em;
+  padding: 18px 5px;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  transition: all 450ms;
+}
+.entete .btn:hover {
+  background: linear-gradient(170deg, #ff93e1, #a16be0);
+  box-shadow: 0px 5px 15px #9c9c9c;
+}
+
 .bordure {
   border: 1px solid red;
 }
@@ -33,6 +49,22 @@ ol, ul, li {
 /*  */
 .fonctionnement li, .entete .btn {
   box-shadow: 0px 4px 8px darkgrey;
+}
+
+.entete .btn {
+  display: block;
+  color: #fff;
+  border-radius: 2em;
+  padding: 18px 5px;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  transition: all 450ms;
+}
+.entete .btn:hover {
+  background: linear-gradient(170deg, #ff93e1, #a16be0);
+  box-shadow: 0px 5px 15px #9c9c9c;
 }
 
 /* ANIMATIONS */
@@ -65,22 +97,7 @@ ol, ul, li {
     opacity: 0;
   }
 }
-/*Animations Boutons*/
-.entete .btn {
-  color: #fff;
-  border-radius: 2em;
-  padding: 18px 5px;
-  background: linear-gradient(170deg, #FF79DA, #9356DC);
-  width: 70%;
-  text-align: center;
-  margin: auto;
-  transition: all 450ms;
-}
-.entete .btn:hover {
-  background: linear-gradient(170deg, #ff93e1, #a16be0);
-  box-shadow: 0px 5px 15px #9c9c9c;
-}
-
+/* Annimation selection */
 @keyframes check {
   0% {
     transform-origin: 100% 50%;

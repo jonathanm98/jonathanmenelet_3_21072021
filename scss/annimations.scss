@@ -35,22 +35,7 @@
     }
 }
 
-/*Animations Boutons*/
-
-%btn {
-    color: #fff;
-    border-radius: 2em;
-    padding: 18px 5px;
-    background: linear-gradient(170deg, $secondary, $primary);
-    width: 70%;
-    text-align: center;
-    margin: auto;
-    transition: all 450ms;
-    &:hover {
-        background: linear-gradient(170deg, lighten($secondary, 5%), lighten($primary, 5%)) ;
-        box-shadow: 0px 5px 15px darken($darkgrey, 5%);
-    }
-}
+/* Annimation selection */
 
 @keyframes check {
     0% {

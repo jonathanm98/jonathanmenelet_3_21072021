@@ -29,7 +29,7 @@
     opacity: 0;
   }
 }
-/*Animations Boutons*/
+/* Annimation selection */
 @keyframes check {
   0% {
     transform-origin: 100% 50%;
