@@ -20,10 +20,10 @@ html {
 /* LOADER */
 body {
     font-family: 'Roboto', sans-serif;
-    // .fullpage {
-    //     animation-name: load;
-    //     animation-duration: 3000ms;
-    // }
+    .fullpage {
+        animation-name: load;
+        animation-duration: 3000ms;
+    }
 } 
 
 .loading {

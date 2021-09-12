@@ -41,7 +41,7 @@ ol, ul, li {
   0% {
     opacity: 0;
   }
-  99% {
+  80% {
     opacity: 0;
   }
   100% {
@@ -55,11 +55,11 @@ ol, ul, li {
   }
   80% {
     transform: rotate(720deg);
-  }
-  99% {
     opacity: 1;
+    scale: 1;
   }
   100% {
+    scale: 2;
     transform: rotate(1440deg);
     display: none;
     opacity: 0;
@@ -118,6 +118,10 @@ html {
 /* LOADER */
 body {
   font-family: "Roboto", sans-serif;
+}
+body .fullpage {
+  animation-name: load;
+  animation-duration: 3000ms;
 }
 
 .loading {
