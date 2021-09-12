@@ -320,18 +320,24 @@ footer li i {
 @media screen and (min-width: 767.7px) {
   .entete .btn {
     max-width: 250px;
+    margin-bottom: -10px;
+  }
+  .entete h2 {
+    padding-top: 25px;
   }
 
+  .fonctionnement h2 {
+    width: 100%;
+    margin-top: 30px;
+  }
   .fonctionnement ol {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: -20px;
   }
   .fonctionnement li {
     width: 48%;
-  }
-  .fonctionnement h2 {
-    width: 100%;
   }
 
   #restaurants {
@@ -391,7 +397,7 @@ footer li i {
   }
   .footer ul {
     margin-top: 15px;
-    width: 100%;
+    width: 70%;
     display: flex;
     justify-content: space-around;
   }
