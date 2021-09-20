@@ -57,6 +57,7 @@
   }
   100% {
     transform: scaley(1);
+    opacity: 1;
   }
 }
 

@@ -127,6 +127,7 @@ main .btn:hover {
   }
   100% {
     transform: scaley(1);
+    opacity: 1;
   }
 }
 /* GENERAL */
@@ -198,8 +199,6 @@ main section div {
   background-color: white;
   margin-top: 16px;
   height: 70px;
-  animation-name: appear;
-  animation-duration: 2000ms;
 }
 main section a {
   display: flex;
@@ -254,6 +253,15 @@ main section a:hover i {
 }
 main section a:active .checked {
   display: initial;
+}
+main .entrees div {
+  animation: appear 2000ms;
+}
+main .plats div {
+  animation: appear 2000ms 250ms;
+}
+main .desserts div {
+  animation: appear 2000ms 500ms;
 }
 main .btn {
   width: 50%;

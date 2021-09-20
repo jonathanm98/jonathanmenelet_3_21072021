@@ -82,7 +82,6 @@ main {
             font-size: 1em;
             font-weight: 100;
             margin-top: 25px;
-            // border-bottom: 3px solid $tertiary;
         }
         div {
             border-radius: 1em;
@@ -90,9 +89,6 @@ main {
             margin-top: 16px;
             height: 70px;
             @extend %boxshadow;
-            animation-name: appear;
-            animation-duration: 2000ms;
-            
         }
         a {
             display: flex;
@@ -155,6 +151,15 @@ main {
 
         }
 
+    }
+    .entrees div {
+        animation: appear 2000ms;
+    }
+    .plats div {
+        animation: appear 2000ms 250ms;
+    }
+    .desserts div {
+        animation: appear 2000ms 500ms;
     }
     .btn {
         @extend %btn;

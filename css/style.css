@@ -125,6 +125,7 @@ ol, ul, li {
   }
   100% {
     transform: scaley(1);
+    opacity: 1;
   }
 }
 /* CSS basique */
