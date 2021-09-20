@@ -114,7 +114,9 @@ header {
     }
     li {
         margin: 20px 0;
-        padding: 30px 0;
+        // padding: 30px 0;
+        height: 75px;
+        line-height: 75px;
         background-color: $lightgrey;
         border-radius: 1.5em;
         @extend %boxshadow;
@@ -134,6 +136,7 @@ header {
         }
 
         i {
+            font-size: 1.3em;
             margin-left: 30px;
             margin-right: 30px;
             color: #7e7e7e;
