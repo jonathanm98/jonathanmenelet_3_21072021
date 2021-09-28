@@ -100,9 +100,17 @@ main .btn:hover {
   }
 }
 /* Annimation selection */
+@keyframes favoris {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+/* Annimation selection */
 @keyframes check {
   0% {
-    transform-origin: 100% 50%;
     opacity: 0.1;
     transform: scaleX(0);
   }
@@ -119,15 +127,21 @@ main .btn:hover {
   }
 }
 /*Animations menu apparition*/
+@keyframes opacite {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes appear {
   0% {
     transform-origin: 50% top;
-    opacity: 0.1;
-    transform: scaley(0);
+    transform: translateY(-20px);
   }
   100% {
-    transform: scaley(1);
-    opacity: 1;
+    transform: translateY(0px);
   }
 }
 /* GENERAL */
@@ -223,15 +237,16 @@ main section a .checked {
   display: none;
   box-shadow: none;
   color: white;
-  height: 70px;
-  line-height: 70px;
+  height: 71px;
+  line-height: 71px;
   width: 60px;
   background-color: #99E2D0;
   text-align: center;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  margin-top: -34px;
+  margin-top: -35px;
   margin-right: -12px;
+  transform-origin: 100% 50%;
 }
 main section a .checked i {
   font-size: 1.2em;
@@ -240,7 +255,6 @@ main section a:hover .checked {
   display: initial;
   animation-name: check;
   animation-duration: 1000ms;
-  transform: scaleX(1);
 }
 main section a:hover .txt {
   height: 20px;
@@ -255,13 +269,13 @@ main section a:active .checked {
   display: initial;
 }
 main .entrees div {
-  animation: appear 2000ms;
+  animation: opacite 1000ms, appear 1500ms;
 }
 main .plats div {
-  animation: appear 2000ms 250ms;
+  animation: opacite 1000ms, appear 1500ms;
 }
 main .desserts div {
-  animation: appear 2000ms 500ms;
+  animation: opacite 1000ms, appear 1500ms;
 }
 main .btn {
   width: 50%;

@@ -37,7 +37,7 @@ body {
     height: 100px;
     margin: auto;
     vertical-align: middle;
-    position: absolute;
+    position: fixed;
     top: 0; right: 0; bottom: 0; left: 0;
 
     animation-name: spin;
@@ -116,7 +116,9 @@ header {
         margin: 20px 0;
         // padding: 30px 0;
         height: 75px;
-        line-height: 75px;
+        display: flex;
+        align-items: center;
+        // line-height: 73px;
         background-color: $lightgrey;
         border-radius: 1.5em;
         @extend %boxshadow;
@@ -165,6 +167,7 @@ header {
     .vignette {
         display: block;
         background-color: $white;
+        @extend %boxshadow;
         margin-bottom: 50px;
         border-radius: 1em;
         position: relative;
@@ -186,11 +189,24 @@ header {
         figcaption {
             padding: 10px 10px;
             position: relative;
-            i {
-                font-size: 1.5em;
+            h4 {
+                padding-bottom: 5px;
+            }
+            button {
+                border: none;
+                background-color: $white;
                 position: absolute;
                 right: 20px;
                 bottom: 20px;
+                pointer-events: none;
+                cursor: default;
+                i {
+                    font-size: 1.5em;
+                    transform-origin: 100% 50%;
+                }
+                &:hover {
+                    animation: favoris 1000ms;
+                }
             }
         }
     }

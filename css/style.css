@@ -22,7 +22,7 @@ ol, ul, li {
 }
 
 /*  */
-.fonctionnement li, .entete .btn {
+#restaurants .vignette, .fonctionnement li, .entete .btn {
   box-shadow: 0px 4px 8px darkgrey;
 }
 
@@ -47,7 +47,7 @@ ol, ul, li {
 }
 
 /*  */
-.fonctionnement li, .entete .btn {
+#restaurants .vignette, .fonctionnement li, .entete .btn {
   box-shadow: 0px 4px 8px darkgrey;
 }
 
@@ -98,9 +98,17 @@ ol, ul, li {
   }
 }
 /* Annimation selection */
+@keyframes favoris {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+/* Annimation selection */
 @keyframes check {
   0% {
-    transform-origin: 100% 50%;
     opacity: 0.1;
     transform: scaleX(0);
   }
@@ -117,15 +125,21 @@ ol, ul, li {
   }
 }
 /*Animations menu apparition*/
+@keyframes opacite {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes appear {
   0% {
     transform-origin: 50% top;
-    opacity: 0.1;
-    transform: scaley(0);
+    transform: translateY(-20px);
   }
   100% {
-    transform: scaley(1);
-    opacity: 1;
+    transform: translateY(0px);
   }
 }
 /* CSS basique */
@@ -153,7 +167,7 @@ body .fullpage {
   height: 100px;
   margin: auto;
   vertical-align: middle;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
@@ -220,7 +234,8 @@ header p i {
 .fonctionnement li {
   margin: 20px 0;
   height: 75px;
-  line-height: 75px;
+  display: flex;
+  align-items: center;
   background-color: #f6f6f6;
   border-radius: 1.5em;
 }
@@ -287,11 +302,24 @@ header p i {
   padding: 10px 10px;
   position: relative;
 }
-#restaurants .vignette figcaption i {
-  font-size: 1.5em;
+#restaurants .vignette figcaption h4 {
+  padding-bottom: 5px;
+}
+#restaurants .vignette figcaption button {
+  border: none;
+  background-color: #fff;
   position: absolute;
   right: 20px;
   bottom: 20px;
+  pointer-events: none;
+  cursor: default;
+}
+#restaurants .vignette figcaption button i {
+  font-size: 1.5em;
+  transform-origin: 100% 50%;
+}
+#restaurants .vignette figcaption button:hover {
+  animation: favoris 1000ms;
 }
 
 /* FOOTER */

@@ -30,9 +30,17 @@
   }
 }
 /* Annimation selection */
+@keyframes favoris {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+/* Annimation selection */
 @keyframes check {
   0% {
-    transform-origin: 100% 50%;
     opacity: 0.1;
     transform: scaleX(0);
   }
@@ -49,15 +57,21 @@
   }
 }
 /*Animations menu apparition*/
+@keyframes opacite {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes appear {
   0% {
     transform-origin: 50% top;
-    opacity: 0.1;
-    transform: scaley(0);
+    transform: translateY(-20px);
   }
   100% {
-    transform: scaley(1);
-    opacity: 1;
+    transform: translateY(0px);
   }
 }
 
