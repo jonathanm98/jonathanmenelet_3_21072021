@@ -97,7 +97,7 @@ ol, ul, li {
     opacity: 0;
   }
 }
-/* Annimation selection */
+/* Annimation favoris */
 @keyframes favoris {
   0% {
     transform: scaleX(0);
@@ -318,7 +318,7 @@ header p i {
   font-size: 1.5em;
   transform-origin: 100% 50%;
 }
-#restaurants .vignette figcaption button:hover {
+#restaurants .vignette figcaption button i:hover {
   animation: favoris 1000ms;
 }
 

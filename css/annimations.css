@@ -29,7 +29,7 @@
     opacity: 0;
   }
 }
-/* Annimation selection */
+/* Annimation favoris */
 @keyframes favoris {
   0% {
     transform: scaleX(0);

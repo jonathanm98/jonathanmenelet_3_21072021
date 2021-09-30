@@ -203,9 +203,9 @@ header {
                 i {
                     font-size: 1.5em;
                     transform-origin: 100% 50%;
-                }
-                &:hover {
-                    animation: favoris 1000ms;
+                    &:hover {
+                        animation: favoris 1000ms;
+                    }
                 }
             }
         }
