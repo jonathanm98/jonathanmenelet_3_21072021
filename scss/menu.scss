@@ -127,7 +127,7 @@ main {
                 }
             }
             &:hover {
-                
+
                 .checked {
                     display: initial;
                     animation-name: check;
@@ -143,19 +143,12 @@ main {
                     animation-delay: 250ms;
                 }
             }
-            &:active {
-                .checked {
-                    display: initial
-                }
-            }
-
         }
-
     }
     .entrees div {
-        // opacity: 0;
+
         animation-fill-mode: forwards;
-        animation: opacite 1000ms 500ms, appear 1500ms 100ms;
+        animation: opacite 1000ms 500ms, appear 1500ms 500ms;
     }
     .plats div {
         animation: opacite 1000ms 750ms, appear 1500ms 750ms;

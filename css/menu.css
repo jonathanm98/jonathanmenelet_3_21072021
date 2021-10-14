@@ -137,11 +137,10 @@ main .btn:hover {
 }
 @keyframes appear {
   0% {
-    transform-origin: 50% top;
-    transform: translateY(0px);
+    transform: translateY(20px);
   }
   100% {
-    transform: translateY(-20px);
+    transform: translateY(0px);
   }
 }
 /* GENERAL */
@@ -265,12 +264,9 @@ main section a:hover i {
   animation-duration: 1000ms;
   animation-delay: 250ms;
 }
-main section a:active .checked {
-  display: initial;
-}
 main .entrees div {
   animation-fill-mode: forwards;
-  animation: opacite 1000ms 500ms, appear 1500ms 100ms;
+  animation: opacite 1000ms 500ms, appear 1500ms 500ms;
 }
 main .plats div {
   animation: opacite 1000ms 750ms, appear 1500ms 750ms;
