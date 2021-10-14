@@ -11,6 +11,7 @@ $grey: #eaeaea;
 $lightgrey : #f6f6f6;
 $white: #fff;
 $rosegrey: #000;
+$degrade: linear-gradient(170deg, $secondary, $primary);
 
 /*  */
 
@@ -22,13 +23,12 @@ $rosegrey: #000;
     width: 90%;
     margin: auto;
 }
-
 %btn {
     display: block;
     color: #fff;
     border-radius: 2em;
     padding: 18px 5px;
-    background: linear-gradient(170deg, $secondary, $primary);
+    background: $degrade;
     width: 70%;
     text-align: center;
     margin: auto;

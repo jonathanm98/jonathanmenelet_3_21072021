@@ -138,10 +138,10 @@ main .btn:hover {
 @keyframes appear {
   0% {
     transform-origin: 50% top;
-    transform: translateY(-20px);
+    transform: translateY(0px);
   }
   100% {
-    transform: translateY(0px);
+    transform: translateY(-20px);
   }
 }
 /* GENERAL */
@@ -269,13 +269,14 @@ main section a:active .checked {
   display: initial;
 }
 main .entrees div {
-  animation: opacite 1000ms, appear 1500ms;
+  animation-fill-mode: forwards;
+  animation: opacite 1000ms 500ms, appear 1500ms 100ms;
 }
 main .plats div {
-  animation: opacite 1000ms, appear 1500ms;
+  animation: opacite 1000ms 750ms, appear 1500ms 750ms;
 }
 main .desserts div {
-  animation: opacite 1000ms, appear 1500ms;
+  animation: opacite 1000ms 1000ms, appear 1500ms 1000ms;
 }
 main .btn {
   width: 50%;

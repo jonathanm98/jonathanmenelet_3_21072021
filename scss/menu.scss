@@ -153,13 +153,15 @@ main {
 
     }
     .entrees div {
-        animation: opacite 1000ms, appear 1500ms;
+        // opacity: 0;
+        animation-fill-mode: forwards;
+        animation: opacite 1000ms 500ms, appear 1500ms 100ms;
     }
     .plats div {
-        animation: opacite 1000ms, appear 1500ms;
+        animation: opacite 1000ms 750ms, appear 1500ms 750ms;
     }
     .desserts div {
-        animation: opacite 1000ms, appear 1500ms;
+        animation: opacite 1000ms 1000ms, appear 1500ms 1000ms;
     }
     .btn {
         @extend %btn;

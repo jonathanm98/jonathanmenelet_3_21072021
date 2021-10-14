@@ -68,10 +68,10 @@
 @keyframes appear {
   0% {
     transform-origin: 50% top;
-    transform: translateY(-20px);
+    transform: translateY(0px);
   }
   100% {
-    transform: translateY(0px);
+    transform: translateY(-20px);
   }
 }
 

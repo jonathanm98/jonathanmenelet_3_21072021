@@ -136,10 +136,10 @@ ol, ul, li {
 @keyframes appear {
   0% {
     transform-origin: 50% top;
-    transform: translateY(-20px);
+    transform: translateY(0px);
   }
   100% {
-    transform: translateY(0px);
+    transform: translateY(-20px);
   }
 }
 /* CSS basique */
@@ -152,7 +152,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 body .fullpage {
-  animation-name: load;
   animation-duration: 3000ms;
 }
 
@@ -305,21 +304,28 @@ header p i {
 #restaurants .vignette figcaption h4 {
   padding-bottom: 5px;
 }
-#restaurants .vignette figcaption button {
-  border: none;
-  background-color: #fff;
+#restaurants .vignette figcaption i {
   position: absolute;
-  right: 20px;
-  bottom: 20px;
-  pointer-events: none;
-  cursor: default;
-}
-#restaurants .vignette figcaption button i {
+  bottom: 10px;
+  right: 10px;
   font-size: 1.5em;
-  transform-origin: 100% 50%;
 }
-#restaurants .vignette figcaption button i:hover {
-  animation: favoris 1000ms;
+#restaurants .vignette figcaption .coeur .fas {
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+#restaurants .vignette figcaption .coeur .fas, #restaurants .vignette figcaption .coeur .far {
+  transition-duration: 600ms;
+}
+#restaurants .vignette figcaption .coeur:hover .fas {
+  opacity: 1;
+}
+#restaurants .vignette figcaption .coeur:hover .far {
+  opacity: 0;
 }
 
 /* FOOTER */

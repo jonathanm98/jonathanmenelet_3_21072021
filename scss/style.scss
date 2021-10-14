@@ -21,7 +21,7 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     .fullpage {
-        animation-name: load;
+        // animation-name: load;
         animation-duration: 3000ms;
     }
 } 
@@ -192,20 +192,36 @@ header {
             h4 {
                 padding-bottom: 5px;
             }
-            button {
-                border: none;
-                background-color: $white;
+            i {
                 position: absolute;
-                right: 20px;
-                bottom: 20px;
-                pointer-events: none;
-                cursor: default;
-                i {
-                    font-size: 1.5em;
-                    transform-origin: 100% 50%;
-                    &:hover {
-                        animation: favoris 1000ms;
+                bottom: 10px;
+                right: 10px;
+                font-size: 1.5em;
+            }
+            .coeur {
+                .fas {
+                    background: linear-gradient(170deg, $secondary, $primary);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -moz-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+
+                    opacity: 0;
+                }
+                .fas, .far {
+                    transition-duration: 600ms; 
+                }
+                
+                &:hover {
+                    .fas {
+                        opacity: 1;
                     }
+                    .far {
+                        opacity: 0;
+                    }                    
+                    // i {
+                    //     color: red;
+                    // }
                 }
             }
         }
