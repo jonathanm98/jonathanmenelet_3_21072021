@@ -69,6 +69,13 @@ main {
             padding-right: 15px;
             font-size: 1.3em;
         }
+        .coeur {
+            .fas, .far {
+            position: absolute;
+            right: 60px
+            }
+            @extend %coeur;
+        }
     }
     section {
         @extend %width90;
@@ -146,15 +153,13 @@ main {
         }
     }
     .entrees div {
-
-        animation-fill-mode: forwards;
-        animation: opacite 1000ms 500ms, appear 1500ms 500ms;
+        animation: delai 750ms, opacite 1000ms 500ms, appear 1500ms 500ms;
     }
     .plats div {
-        animation: opacite 1000ms 750ms, appear 1500ms 750ms;
+        animation: delai 750ms, opacite 1000ms 750ms, appear 1500ms 750ms;
     }
     .desserts div {
-        animation: opacite 1000ms 1000ms, appear 1500ms 1000ms;
+        animation: delai 1000ms, opacite 1000ms 1000ms, appear 1500ms 1000ms;
     }
     .btn {
         @extend %btn;

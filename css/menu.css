@@ -43,6 +43,24 @@ main .btn:hover {
   box-shadow: 0px 5px 15px #9c9c9c;
 }
 
+main .titre .coeur .fas {
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+main .titre .coeur .fas, main .titre .coeur .far {
+  transition-duration: 600ms;
+}
+main .titre .coeur:hover .fas {
+  opacity: 1;
+}
+main .titre .coeur:hover .far {
+  opacity: 0;
+}
+
 /*  */
 main section div {
   box-shadow: 0px 4px 8px darkgrey;
@@ -67,6 +85,24 @@ main .btn {
 main .btn:hover {
   background: linear-gradient(170deg, #ff93e1, #a16be0);
   box-shadow: 0px 5px 15px #9c9c9c;
+}
+
+main .titre .coeur .fas {
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+main .titre .coeur .fas, main .titre .coeur .far {
+  transition-duration: 600ms;
+}
+main .titre .coeur:hover .fas {
+  opacity: 1;
+}
+main .titre .coeur:hover .far {
+  opacity: 0;
 }
 
 /* ANIMATIONS */
@@ -127,6 +163,17 @@ main .btn:hover {
   }
 }
 /*Animations menu apparition*/
+@keyframes delai {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes opacite {
   0% {
     opacity: 0;
@@ -195,6 +242,10 @@ main .titre i {
   margin: auto;
   padding-right: 15px;
   font-size: 1.3em;
+}
+main .titre .coeur .fas, main .titre .coeur .far {
+  position: absolute;
+  right: 60px;
 }
 main section hr {
   width: 20px;
@@ -265,14 +316,13 @@ main section a:hover i {
   animation-delay: 250ms;
 }
 main .entrees div {
-  animation-fill-mode: forwards;
-  animation: opacite 1000ms 500ms, appear 1500ms 500ms;
+  animation: delai 750ms, opacite 1000ms 500ms, appear 1500ms 500ms;
 }
 main .plats div {
-  animation: opacite 1000ms 750ms, appear 1500ms 750ms;
+  animation: delai 750ms, opacite 1000ms 750ms, appear 1500ms 750ms;
 }
 main .desserts div {
-  animation: opacite 1000ms 1000ms, appear 1500ms 1000ms;
+  animation: delai 1000ms, opacite 1000ms 1000ms, appear 1500ms 1000ms;
 }
 main .btn {
   width: 50%;

@@ -38,3 +38,27 @@ $degrade: linear-gradient(170deg, $secondary, $primary);
         box-shadow: 0px 5px 15px darken($darkgrey, 5%);
     }
 }
+
+%coeur {
+    .fas {
+        background: linear-gradient(170deg, $secondary, $primary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        opacity: 0;
+    }
+    .fas, .far {
+        transition-duration: 600ms; 
+    }
+    
+    &:hover {
+        .fas {
+            opacity: 1;
+        }
+        .far {
+            opacity: 0;
+        }                    
+    }
+}

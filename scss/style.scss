@@ -21,7 +21,7 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     .fullpage {
-        // animation-name: load;
+        animation-name: load;
         animation-duration: 3000ms;
     }
 } 
@@ -199,30 +199,7 @@ header {
                 font-size: 1.5em;
             }
             .coeur {
-                .fas {
-                    background: linear-gradient(170deg, $secondary, $primary);
-                    background-clip: text;
-                    -webkit-background-clip: text;
-                    -moz-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-
-                    opacity: 0;
-                }
-                .fas, .far {
-                    transition-duration: 600ms; 
-                }
-                
-                &:hover {
-                    .fas {
-                        opacity: 1;
-                    }
-                    .far {
-                        opacity: 0;
-                    }                    
-                    // i {
-                    //     color: red;
-                    // }
-                }
+                @extend %coeur;
             }
         }
     }

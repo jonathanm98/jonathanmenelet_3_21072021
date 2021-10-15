@@ -42,6 +42,24 @@ ol, ul, li {
   box-shadow: 0px 5px 15px #9c9c9c;
 }
 
+#restaurants .vignette figcaption .coeur .fas {
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+#restaurants .vignette figcaption .coeur .fas, #restaurants .vignette figcaption .coeur .far {
+  transition-duration: 600ms;
+}
+#restaurants .vignette figcaption .coeur:hover .fas {
+  opacity: 1;
+}
+#restaurants .vignette figcaption .coeur:hover .far {
+  opacity: 0;
+}
+
 .bordure {
   border: 1px solid red;
 }
@@ -65,6 +83,24 @@ ol, ul, li {
 .entete .btn:hover {
   background: linear-gradient(170deg, #ff93e1, #a16be0);
   box-shadow: 0px 5px 15px #9c9c9c;
+}
+
+#restaurants .vignette figcaption .coeur .fas {
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+#restaurants .vignette figcaption .coeur .fas, #restaurants .vignette figcaption .coeur .far {
+  transition-duration: 600ms;
+}
+#restaurants .vignette figcaption .coeur:hover .fas {
+  opacity: 1;
+}
+#restaurants .vignette figcaption .coeur:hover .far {
+  opacity: 0;
 }
 
 /* ANIMATIONS */
@@ -125,6 +161,17 @@ ol, ul, li {
   }
 }
 /*Animations menu apparition*/
+@keyframes delai {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes opacite {
   0% {
     opacity: 0;
@@ -151,6 +198,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 body .fullpage {
+  animation-name: load;
   animation-duration: 3000ms;
 }
 
@@ -309,24 +357,6 @@ header p i {
   right: 10px;
   font-size: 1.5em;
 }
-#restaurants .vignette figcaption .coeur .fas {
-  background: linear-gradient(170deg, #FF79DA, #9356DC);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 0;
-}
-#restaurants .vignette figcaption .coeur .fas, #restaurants .vignette figcaption .coeur .far {
-  transition-duration: 600ms;
-}
-#restaurants .vignette figcaption .coeur:hover .fas {
-  opacity: 1;
-}
-#restaurants .vignette figcaption .coeur:hover .far {
-  opacity: 0;
-}
-
 /* FOOTER */
 footer {
   padding: 0 5%;
