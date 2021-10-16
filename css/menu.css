@@ -243,7 +243,7 @@ main section hr {
 main section h3 {
   font-size: 1em;
   font-weight: 100;
-  margin-top: 25px;
+  margin-top: 40px;
 }
 main section a {
   display: flex;
@@ -282,7 +282,10 @@ main section a .texte p {
 main section a .prix {
   flex-shrink: 0;
   width: 10%;
-  margin-top: 20px;
+  margin-top: 24px;
+  margin-right: 5px;
+  font-weight: bold;
+  font-size: 0.95em;
 }
 main section a .checked {
   display: none;
