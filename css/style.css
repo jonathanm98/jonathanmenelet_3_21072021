@@ -161,17 +161,6 @@ ol, ul, li {
   }
 }
 /*Animations menu apparition*/
-@keyframes delai {
-  0% {
-    opacity: 0;
-  }
-  99% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 @keyframes opacite {
   0% {
     opacity: 0;
@@ -218,6 +207,7 @@ body .fullpage {
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: -1;
   animation-name: spin;
   animation-duration: 3000ms;
   animation-fill-mode: forwards;
@@ -343,6 +333,8 @@ header p i {
   right: 12px;
   background-color: #99E2D0;
   color: #008766;
+  font-size: 0.8em;
+  border-radius: 2px;
 }
 #restaurants .vignette figcaption {
   padding: 10px 10px;
@@ -353,7 +345,7 @@ header p i {
 }
 #restaurants .vignette figcaption i {
   position: absolute;
-  bottom: 10px;
+  top: 10px;
   right: 10px;
   font-size: 1.5em;
 }

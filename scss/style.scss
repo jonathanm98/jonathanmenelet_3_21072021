@@ -39,6 +39,7 @@ body {
     vertical-align: middle;
     position: fixed;
     top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -1;
 
     animation-name: spin;
     animation-duration: 3000ms;
@@ -185,6 +186,8 @@ header {
             right: 12px;
             background-color: $tertiary;
             color: #008766;
+            font-size: .8em;
+            border-radius: 2px;
         }
         figcaption {
             padding: 10px 10px;
@@ -194,7 +197,7 @@ header {
             }
             i {
                 position: absolute;
-                bottom: 10px;
+                top: 10px;
                 right: 10px;
                 font-size: 1.5em;
             }

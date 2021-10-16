@@ -15,7 +15,6 @@ body {
 }
 
 
-
 /* HEADER */
 
 header {
@@ -55,24 +54,22 @@ main {
     background-color: $lightgrey;
     border-top-left-radius: 3em;
     border-top-right-radius: 3em;
-    h2 {
-        @extend %width90;
-        font-family: Shrikhand, sans-serif;
-        font-weight: 100;
-        
-    }
     .titre {
             display: flex;
             @extend %width90;
-        i {
-            margin:auto;
-            padding-right: 15px;
-            font-size: 1.3em;
+        h2 {
+            font-family: Shrikhand, sans-serif;
+            font-weight: 100;
+            width: 80%;
         }
         .coeur {
-            .fas, .far {
+            position: relative;
+            width: 20%;
+            i {
+            font-size: 1.3em;
             position: absolute;
-            right: 60px
+            top: 8px;
+            right: 0px;
             }
             @extend %coeur;
         }
@@ -80,40 +77,53 @@ main {
     section {
         @extend %width90;
         hr {
-            width: 20px;
+            width: 40px;
             border: 0;
             border-top: 3px solid $tertiary;
             margin-right: 1000px;
         }
-        h5 {
+        h3 {
             font-size: 1em;
             font-weight: 100;
             margin-top: 25px;
         }
-        div {
-            border-radius: 1em;
-            background-color: white;
-            margin-top: 16px;
-            height: 70px;
-            @extend %boxshadow;
-        }
         a {
             display: flex;
-            flex-wrap: wrap;
+            width: 100%;
             justify-content: space-between;
-            padding: 0 10px;
-            padding-top: 14px;
-            h6 {
-                width: 100%;
-                font-size: 1.05em;
-            }
-            .txt {
-                font-size: 0.95em;
-                font-weight: 100;
+            height: 70px;
+            padding: 10px 0px 10px 10px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 5px rgb(206, 206, 206);
+            overflow: hidden;
+            text-decoration: none;
+            color: #000;
+            margin-top: 20px;
+            .texte {
+                text-overflow: ellipsis;
+                white-space: nowrap;
                 overflow: hidden;
+                width: 90%;
+                h5 {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    font-size: 1em;
+                    margin-bottom: 5px;
+                }
+                p {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    font-size: 0.9em;
+                    font-weight: 100;
+                }
             }
-            p:not(.txt) {
-                font-weight: bold;
+            .prix {
+                flex-shrink: 0;
+                width: 10%;
+                margin-top: 20px;
             }
             .checked {
                 display: none;
@@ -124,42 +134,43 @@ main {
                 width: 60px;
                 background-color: $tertiary;
                 text-align: center;
-                border-top-left-radius: 0;
-                border-bottom-left-radius: 0;
-                margin-top: -35px;
-                margin-right: -12px;
+                border-top-right-radius: 1em;
+                border-bottom-right-radius: 1em;
+                margin-top: -10px;
                 transform-origin: 100% 50%;
                 i {
                     font-size: 1.2em;
                 }
             }
-            &:hover {
-
-                .checked {
-                    display: initial;
-                    animation-name: check;
-                    animation-duration: 1000ms;
-                }
-                .txt {
-                    height: 20px;
-                    width: 290px;
-                }
-                i {
-                    animation-name: check-rotate;
-                    animation-duration: 1000ms;
-                    animation-delay: 250ms;
-                }
+        }
+        &:hover {
+            .checked {
+                display: initial;
+                animation-name: check;
+                animation-duration: 1000ms;
+            }
+            i {
+                animation-name: check-rotate;
+                animation-duration: 1000ms;
+                animation-delay: 250ms;
             }
         }
     }
-    .entrees div {
-        animation: delai 750ms, opacite 1000ms 500ms, appear 1500ms 500ms;
+
+    .entrees>a {
+        opacity: 0;
+        animation: opacite 1000ms 500ms, appear 1500ms 500ms;
+        animation-fill-mode: forwards;
     }
-    .plats div {
-        animation: delai 750ms, opacite 1000ms 750ms, appear 1500ms 750ms;
+    .plats>a {
+        opacity: 0;
+        animation: opacite 1000ms 750ms, appear 1500ms 750ms;
+        animation-fill-mode: forwards;
     }
-    .desserts div {
-        animation: delai 1000ms, opacite 1000ms 1000ms, appear 1500ms 1000ms;
+    .desserts>a {
+        opacity: 0;
+        animation: opacite 1000ms 1000ms, appear 1500ms 1000ms;
+        animation-fill-mode: forwards;
     }
     .btn {
         @extend %btn;
@@ -204,10 +215,10 @@ footer {
                 flex-wrap: wrap;
                 justify-content: space-between;
 
-                h5 {
+                h3 {
                     width: 100%;
                 }
-                div {
+                a {
                     width: 49%;
                 }
             }
@@ -230,11 +241,7 @@ footer {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-
-            h5 {
-                width: 100%;
-            }
-            div {
+            a {
                 width: 32%;
             }
         }
