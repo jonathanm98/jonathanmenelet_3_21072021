@@ -171,6 +171,10 @@ main .titre .coeur:hover .far {
     transform: translateY(0px);
   }
 }
+.bordure {
+  border: 1px solid red;
+}
+
 /* GENERAL */
 body {
   font-family: Roboto, sans-serif;
@@ -297,12 +301,12 @@ main section a .checked {
 main section a .checked i {
   font-size: 1.2em;
 }
-main section:hover .checked {
+main section a:hover .checked {
   display: initial;
   animation-name: check;
   animation-duration: 1000ms;
 }
-main section:hover i {
+main section a:hover i {
   animation-name: check-rotate;
   animation-duration: 1000ms;
   animation-delay: 250ms;

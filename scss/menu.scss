@@ -7,6 +7,10 @@
 @import 'variables';
 @import 'annimations';
 
+.bordure {
+    border: 1px solid red;
+}
+
 
 /* GENERAL */
 
@@ -142,17 +146,18 @@ main {
                     font-size: 1.2em;
                 }
             }
-        }
-        &:hover {
-            .checked {
-                display: initial;
-                animation-name: check;
-                animation-duration: 1000ms;
-            }
-            i {
-                animation-name: check-rotate;
-                animation-duration: 1000ms;
-                animation-delay: 250ms;
+
+            &:hover {
+                .checked {
+                    display: initial;
+                    animation-name: check;
+                    animation-duration: 1000ms;
+                }
+                i {
+                    animation-name: check-rotate;
+                    animation-duration: 1000ms;
+                    animation-delay: 250ms;
+                }
             }
         }
     }
