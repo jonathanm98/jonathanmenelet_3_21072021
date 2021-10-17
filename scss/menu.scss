@@ -129,6 +129,7 @@ main {
                 width: 10%;
                 margin-top: 24px;
                 margin-right: 5px;
+                margin-left: 10px;
                 font-weight: bold;
                 font-size: 0.95em;
             }
@@ -155,12 +156,15 @@ main {
                     display: initial;
                     animation-name: check;
                     animation-duration: 1000ms;
+                    i {
+                        animation-name: check-rotate;
+                        animation-duration: 1000ms;
+                        animation-delay: 250ms;
+                    }
                 }
-                i {
-                    animation-name: check-rotate;
-                    animation-duration: 1000ms;
-                    animation-delay: 250ms;
-                }
+                .texte {
+                    width: 80%;
+                }                
             }
         }
     }

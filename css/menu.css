@@ -284,6 +284,7 @@ main section a .prix {
   width: 10%;
   margin-top: 24px;
   margin-right: 5px;
+  margin-left: 10px;
   font-weight: bold;
   font-size: 0.95em;
 }
@@ -309,10 +310,13 @@ main section a:hover .checked {
   animation-name: check;
   animation-duration: 1000ms;
 }
-main section a:hover i {
+main section a:hover .checked i {
   animation-name: check-rotate;
   animation-duration: 1000ms;
   animation-delay: 250ms;
+}
+main section a:hover .texte {
+  width: 80%;
 }
 main .entrees > a {
   opacity: 0;
