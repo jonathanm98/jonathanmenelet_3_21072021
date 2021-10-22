@@ -7,10 +7,6 @@
 @import 'variables';
 @import 'annimations';
 
-.bordure {
-    border: 1px solid red;
-}
-
 
 /* GENERAL */
 
@@ -80,22 +76,22 @@ main {
     }
     section {
         @extend %width90;
+        h3 {
+            font-size: 1em;
+            font-weight: 100;
+            margin-top: 40px;
+        }
         hr {
             width: 40px;
             border: 0;
             border-top: 3px solid $tertiary;
             margin-right: 1000px;
         }
-        h3 {
-            font-size: 1em;
-            font-weight: 100;
-            margin-top: 40px;
-        }
         a {
             display: flex;
             width: 100%;
             justify-content: space-between;
-            height: 70px;
+            height: 71px;
             padding: 12px 0px 10px 7px;
             background-color: white;
             border-radius: 15px;
@@ -105,10 +101,10 @@ main {
             color: #000;
             margin-top: 20px;
             .texte {
+                @extend %width90;
                 text-overflow: ellipsis;
                 white-space: nowrap;
                 overflow: hidden;
-                width: 90%;
                 animation-name: price-transition;
                 animation-duration: 1000ms;
                 h5 {
@@ -129,9 +125,7 @@ main {
             .prix {
                 flex-shrink: 0;
                 width: 10%;
-                margin-top: 24px;
-                margin-right: 5px;
-                margin-left: 10px;
+                margin: 24px 6px 0 10px;
                 font-weight: bold;
                 font-size: 0.95em;
             }
@@ -139,14 +133,14 @@ main {
                 display: none;
                 box-shadow: none;
                 color: white;
-                height: 71px;
-                line-height: 71px;
+                height: 72px;
+                line-height: 72px;
                 width: 60px;
                 background-color: $tertiary;
                 text-align: center;
                 border-top-right-radius: 1em;
                 border-bottom-right-radius: 1em;
-                margin-top: -10px;
+                margin-top: -11.7px;
                 transform-origin: 100% 50%;
                 i {
                     font-size: 1.2em;
@@ -221,7 +215,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 767.7px) {
+@media #{$tablette} {
         main {
 
             section {
@@ -248,7 +242,7 @@ footer {
         }
 }
 
-@media screen and (min-width: 1199.7px) {
+@media #{$desktop} {
     main {
 
         section {

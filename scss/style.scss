@@ -9,10 +9,6 @@
 
 /* CSS basique */
 
-.bordure {
-    @extend %bordure;
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -55,8 +51,8 @@ header {
 
     h1 {
         padding: 20px 0;
-        box-shadow: 0px 1px 10px darkgray;
-        background-color: #ffffff;
+        box-shadow: 0px 1px 10px $darkgrey;
+        background-color: $white;
         text-align: center;
         a {
             font-family: Shrikhand;
@@ -115,11 +111,9 @@ header {
     }
     li {
         margin: 20px 0;
-        // padding: 30px 0;
         height: 75px;
         display: flex;
         align-items: center;
-        // line-height: 73px;
         background-color: $lightgrey;
         border-radius: 1.5em;
         @extend %boxshadow;
@@ -185,7 +179,7 @@ header {
             top: 12px;
             right: 12px;
             background-color: $tertiary;
-            color: #008766;
+            color: $greennew;
             font-size: .8em;
             border-radius: 2px;
         }
@@ -235,7 +229,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 767.7px) {
+@media #{$tablette} {
 
     .entete {
         .btn {
@@ -287,7 +281,7 @@ footer {
     
 }
 
-@media screen and (min-width: 1023.7px) {
+@media #{$desktop} {
 
     .entete {
         .btn {
