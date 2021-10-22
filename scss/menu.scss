@@ -96,7 +96,7 @@ main {
             width: 100%;
             justify-content: space-between;
             height: 70px;
-            padding: 14px 0px 10px 10px;
+            padding: 12px 0px 10px 7px;
             background-color: white;
             border-radius: 15px;
             box-shadow: 0 5px 5px rgb(206, 206, 206);
@@ -109,6 +109,8 @@ main {
                 white-space: nowrap;
                 overflow: hidden;
                 width: 90%;
+                animation-name: price-transition;
+                animation-duration: 1000ms;
                 h5 {
                     overflow: hidden;
                     text-overflow: ellipsis;
