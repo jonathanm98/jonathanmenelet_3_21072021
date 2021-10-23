@@ -1,26 +1,7 @@
 /* Liens externes*/
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-ol, ul, li {
-  list-style-type: none;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
+@import '../css/reset.css';
 /* Placeholder */
 main section, main .titre {
   width: 90%;
