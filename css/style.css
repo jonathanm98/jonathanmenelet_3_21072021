@@ -26,9 +26,6 @@
 #restaurants .vignette figcaption .coeur .fas {
   background: linear-gradient(170deg, #FF79DA, #9356DC);
   background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
   opacity: 0;
 }
 #restaurants .vignette figcaption .coeur .fas, #restaurants .vignette figcaption .coeur .far {
@@ -65,9 +62,6 @@
 #restaurants .vignette figcaption .coeur .fas {
   background: linear-gradient(170deg, #FF79DA, #9356DC);
   background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
   opacity: 0;
 }
 #restaurants .vignette figcaption .coeur .fas, #restaurants .vignette figcaption .coeur .far {
