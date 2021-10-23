@@ -55,7 +55,7 @@ main {
     border-top-left-radius: 3em;
     border-top-right-radius: 3em;
     .titre {
-            display: flex;
+            display: inline-flex;
             @extend %width90;
         h2 {
             font-family: Shrikhand, sans-serif;
