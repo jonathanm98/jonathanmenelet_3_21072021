@@ -17,6 +17,10 @@ ol, ul, li {
   list-style-type: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Placeholder */
 main section, main .titre {
   width: 90%;
