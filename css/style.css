@@ -1,22 +1,7 @@
 /* Liens externes*/
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-ol, ul, li {
-  list-style-type: none;
-}
-
+@import '../css/reset.css';
 /* Placeholder */
 #restaurants .vignette, .fonctionnement li, .entete .btn {
   box-shadow: 0px 4px 8px darkgrey;
@@ -134,24 +119,6 @@ ol, ul, li {
     transform: scaleX(1);
   }
 }
-/* Annimation selection */
-@keyframes check {
-  0% {
-    opacity: 0.1;
-    transform: scaleX(0);
-  }
-  100% {
-    transform: scaleX(1);
-  }
-}
-@keyframes check-rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 /*Animations menu apparition*/
 @keyframes opacite {
   0% {
@@ -169,11 +136,32 @@ ol, ul, li {
     transform: translateY(0px);
   }
 }
-/* CSS basique */
-html {
-  scroll-behavior: smooth;
+/* Annimations selection */
+@keyframes price-transition {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-60px);
+  }
 }
-
+@keyframes check {
+  0% {
+    opacity: 0.1;
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes check-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /* LOADER */
 body {
   font-family: "Roboto", sans-serif;
@@ -338,7 +326,7 @@ header p i {
 #restaurants .vignette figcaption i {
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 20px;
   font-size: 1.5em;
 }
 /* FOOTER */
