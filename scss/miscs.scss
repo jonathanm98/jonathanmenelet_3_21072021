@@ -42,7 +42,7 @@ $bordure: 1px solid red;
     .fas {
         background: linear-gradient(170deg, $secondary, $primary);
         background-clip: text;
-        // -webkit-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
 
         opacity: 0;
     }
