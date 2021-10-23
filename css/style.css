@@ -16,7 +16,7 @@
   width: 70%;
   text-align: center;
   margin: auto;
-  transition: all 450ms;
+  transition-duration: 200ms;
 }
 .entete .btn:hover {
   background: linear-gradient(170deg, #ff93e1, #a16be0);
@@ -55,7 +55,7 @@
   width: 70%;
   text-align: center;
   margin: auto;
-  transition: all 450ms;
+  transition-duration: 200ms;
 }
 .entete .btn:hover {
   background: linear-gradient(170deg, #ff93e1, #a16be0);

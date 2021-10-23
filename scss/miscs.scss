@@ -31,7 +31,7 @@ $bordure: 1px solid red;
     width: 70%;
     text-align: center;
     margin: auto;
-    transition: all 450ms;
+    transition-duration: 200ms;
     &:hover {
         background: $degrade-lighten ;
         box-shadow: 0px 5px 15px darken($darkgrey, 5%);

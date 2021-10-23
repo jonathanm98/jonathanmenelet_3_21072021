@@ -17,7 +17,7 @@ main .btn {
   width: 70%;
   text-align: center;
   margin: auto;
-  transition: all 450ms;
+  transition-duration: 200ms;
 }
 main .btn:hover {
   background: linear-gradient(170deg, #ff93e1, #a16be0);
@@ -57,7 +57,7 @@ main .btn {
   width: 70%;
   text-align: center;
   margin: auto;
-  transition: all 450ms;
+  transition-duration: 200ms;
 }
 main .btn:hover {
   background: linear-gradient(170deg, #ff93e1, #a16be0);
