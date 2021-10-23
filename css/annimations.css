@@ -55,7 +55,7 @@
     transform: translateY(0px);
   }
 }
-/* Annimation selection */
+/* Annimations selection */
 @keyframes price-transition {
   0% {
     transform: translateX(0px);
