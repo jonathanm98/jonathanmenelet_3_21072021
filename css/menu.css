@@ -104,8 +104,8 @@ main .titre .coeur:hover .far {
   100% {
     scale: 2;
     transform: rotate(1440deg);
-    display: none;
     opacity: 0;
+    display: none;
   }
 }
 /* Annimation favoris */
