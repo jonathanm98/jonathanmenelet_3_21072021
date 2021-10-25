@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import '../css/reset.css';
-/* Placeholder */
 main section, main .titre {
   width: 90%;
   margin: auto;
@@ -40,7 +39,6 @@ main .titre .coeur:hover .far {
   opacity: 0;
 }
 
-/* Placeholder */
 main section, main .titre {
   width: 90%;
   margin: auto;
@@ -97,13 +95,11 @@ main .titre .coeur:hover .far {
     opacity: 1;
   }
   80% {
-    transform: rotate(720deg);
+    transform: rotate(720deg) scale(1);
     opacity: 1;
-    scale: 1;
   }
   100% {
-    scale: 2;
-    transform: rotate(1440deg);
+    transform: rotate(1440deg) scale(2);
     opacity: 0;
     display: none;
   }
