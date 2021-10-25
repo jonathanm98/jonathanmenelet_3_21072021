@@ -175,17 +175,17 @@ main {
 
     .entrees>a {
         opacity: 0;
-        animation: opacite 1000ms 500ms, appear 1500ms 500ms;
+        animation: appear 1500ms 500ms;
         animation-fill-mode: forwards;
     }
     .plats>a {
         opacity: 0;
-        animation: opacite 1000ms 750ms, appear 1500ms 750ms;
+        animation: appear 1500ms 750ms;
         animation-fill-mode: forwards;
     }
     .desserts>a {
         opacity: 0;
-        animation: opacite 1000ms 1000ms, appear 1500ms 1000ms;
+        animation: appear 1500ms 1000ms;
         animation-fill-mode: forwards;
     }
     .btn {
