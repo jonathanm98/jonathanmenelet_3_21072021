@@ -42,12 +42,11 @@ $bordure: 1px solid red;
     .fas {
         background: linear-gradient(170deg, $secondary, $primary);
         background-clip: text;
-        -webkit-text-fill-color: transparent;
-
+        color: transparent;
         opacity: 0;
     }
     .fas, .far {
-        transition-duration: 600ms; 
+        transition-duration: 600ms;
     }
     
     &:hover {

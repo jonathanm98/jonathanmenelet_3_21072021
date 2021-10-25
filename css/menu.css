@@ -27,7 +27,7 @@ main .btn:hover {
 main .titre .coeur .fas {
   background: linear-gradient(170deg, #FF79DA, #9356DC);
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
   opacity: 0;
 }
 main .titre .coeur .fas, main .titre .coeur .far {
@@ -65,7 +65,7 @@ main .btn:hover {
 main .titre .coeur .fas {
   background: linear-gradient(170deg, #FF79DA, #9356DC);
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
   opacity: 0;
 }
 main .titre .coeur .fas, main .titre .coeur .far {
