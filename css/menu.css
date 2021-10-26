@@ -26,6 +26,7 @@ main .btn:hover {
 main .titre .coeur .fas {
   background: linear-gradient(170deg, #FF79DA, #9356DC);
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
   opacity: 0;
 }
@@ -63,6 +64,7 @@ main .btn:hover {
 main .titre .coeur .fas {
   background: linear-gradient(170deg, #FF79DA, #9356DC);
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
   opacity: 0;
 }
@@ -282,18 +284,18 @@ main section a:hover .texte p {
 }
 main section a:hover .prix {
   animation-name: price-transition;
-  animation-duration: 1000ms;
+  animation-duration: 500ms;
   animation-fill-mode: forwards;
   width: 10%;
 }
 main section a:hover .checked {
   display: initial;
   animation-name: check;
-  animation-duration: 1000ms;
+  animation-duration: 500ms;
 }
 main section a:hover .checked i {
   animation-name: check-rotate;
-  animation-duration: 1000ms;
+  animation-duration: 500ms;
   animation-delay: 250ms;
 }
 main .entrees > a {
@@ -342,7 +344,7 @@ footer li i {
   margin-right: 14px;
 }
 
-@media only screen and (min-width: 767.7px) {
+@media only screen and (min-width: 768px) {
   main section {
     display: flex;
     flex-wrap: wrap;
@@ -365,7 +367,7 @@ footer li i {
     font-size: 2.4em;
   }
 }
-@media only screen and (min-width: 1023.7px) {
+@media only screen and (min-width: 1024px) {
   main section {
     display: flex;
     flex-wrap: wrap;

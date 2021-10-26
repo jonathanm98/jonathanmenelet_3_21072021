@@ -153,17 +153,17 @@ main {
                 }
                 .prix {
                     animation-name: price-transition;
-                    animation-duration: 1000ms;
+                    animation-duration: 500ms;
                     animation-fill-mode: forwards;
                     width: 10%;
                 }
                 .checked {
                     display: initial;
                     animation-name: check;
-                    animation-duration: 1000ms;
+                    animation-duration: 500ms;
                     i {
                         animation-name: check-rotate;
-                        animation-duration: 1000ms;
+                        animation-duration: 500ms;
                         animation-delay: 250ms;
                     }
                 }            

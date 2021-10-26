@@ -41,7 +41,9 @@ $bordure: 1px solid red;
     .fas {
         background: linear-gradient(170deg, $secondary, $primary);
         background-clip: text;
+        -webkit-background-clip: text;
         color: transparent;
+        
         opacity: 0;
     }
     .fas, .far {
@@ -61,6 +63,6 @@ $bordure: 1px solid red;
 
 // Media queries
 
-$tablette: "only screen and (min-width: 767.7px)";
+$tablette: "only screen and (min-width: 768px)";
 
-$desktop: "only screen and (min-width: 1023.7px)";
+$desktop: "only screen and (min-width: 1024px)";
