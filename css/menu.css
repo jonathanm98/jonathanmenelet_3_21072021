@@ -135,7 +135,6 @@ main .titre .coeur:hover .far {
 }
 @keyframes check {
   0% {
-    opacity: 0.1;
     transform: scaleX(0);
   }
   100% {
@@ -236,8 +235,6 @@ main section a {
   margin-top: 20px;
 }
 main section a .texte {
-  text-overflow: ellipsis;
-  white-space: nowrap;
   overflow: hidden;
   width: 85%;
 }
