@@ -1,1 +1,395 @@
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");@import '../css/reset.css';main section,main .titre{width:90%;margin:auto}main .btn{display:block;color:#fff;border-radius:2em;padding:18px 5px;background:linear-gradient(170deg,#FF79DA,#9356DC);width:70%;text-align:center;margin:auto;transition-duration:200ms}main .btn:hover{background:linear-gradient(170deg,#ff93e1,#a16be0);box-shadow:0 5px 15px #9c9c9c}main .titre .coeur .fas{background:linear-gradient(170deg,#FF79DA,#9356DC);background-clip:text;-webkit-background-clip:text;color:transparent;opacity:0}main .titre .coeur .fas,main .titre .coeur .far{transition-duration:600ms}main .titre .coeur:hover .fas{opacity:1}main .titre .coeur:hover .far{opacity:0}main section,main .titre{width:90%;margin:auto}main .btn{display:block;color:#fff;border-radius:2em;padding:18px 5px;background:linear-gradient(170deg,#FF79DA,#9356DC);width:70%;text-align:center;margin:auto;transition-duration:200ms}main .btn:hover{background:linear-gradient(170deg,#ff93e1,#a16be0);box-shadow:0 5px 15px #9c9c9c}main .titre .coeur .fas{background:linear-gradient(170deg,#FF79DA,#9356DC);background-clip:text;-webkit-background-clip:text;color:transparent;opacity:0}main .titre .coeur .fas,main .titre .coeur .far{transition-duration:600ms}main .titre .coeur:hover .fas{opacity:1}main .titre .coeur:hover .far{opacity:0}@keyframes load{0%{opacity:0}90%{opacity:0}100%{opacity:1}}@keyframes spin{0%{transform:rotate(0deg);opacity:1}80%{transform:rotate(720deg) scale(1);opacity:1}100%{transform:rotate(1440deg) scale(2);opacity:0;display:none}}@keyframes favoris{0%{transform:scaleX(0)}100%{transform:scaleX(1)}}@keyframes appear{0%{opacity:0;transform:translateY(20px)}100%{transform:translateY(0px);opacity:1}}@keyframes price-transition{0%{transform:translateX(0px)}100%{transform:translateX(-60px)}}@keyframes check{0%{transform:scaleX(0)}100%{transform:scaleX(1)}}@keyframes check-rotate{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}body{font-family:Roboto,sans-serif}header .static{display:flex;padding:17px 0 9px 0}header .static h1{font-weight:100;font-size:31px;margin:auto}header .static a{font-family:Shrikhand,sans-serif}header .static i{font-size:1.2em;position:absolute;left:22px;top:25px}header img{height:220px;width:100%;position:relative;object-fit:cover}main{position:relative;padding-top:40px;padding-bottom:40px;margin-top:-48px;background-color:#f6f6f6;border-top-left-radius:3em;border-top-right-radius:3em}main .titre{display:flex}main .titre h2{font-family:Shrikhand,sans-serif;font-weight:100;width:80%}main .titre .coeur{position:relative;width:20%}main .titre .coeur i{font-size:1.3em;position:absolute;top:8px;right:0}main section h3{font-size:1em;font-weight:100;margin-top:40px}main section hr{width:40px;border:0;border-top:3px solid #99e2d0;margin-right:1000px}main section a{position:relative;display:flex;width:100%;justify-content:space-between;height:71px;padding:12px 0 10px 7px;background-color:white;border-radius:15px;box-shadow:0 5px 5px #cecece;overflow:hidden;text-decoration:none;color:#000;margin-top:20px}main section a .texte{overflow:hidden;width:85%}main section a .texte h5{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:1em;margin-bottom:5px}main section a .texte p{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:.9em;font-weight:100}main section a .prix{position:absolute;right:8px;flex-shrink:0;margin:24px 6px 0 10px;font-weight:bold;font-size:.95em}main section a .checked{display:none;box-shadow:none;color:white;height:72px;line-height:72px;width:60px;background-color:#99e2d0;text-align:center;border-top-right-radius:1em;border-bottom-right-radius:1em;margin-top:-11.7px;transform-origin:100% 50%}main section a .checked i{font-size:1.2em}main section a:hover .texte p{width:75%}main section a:hover .prix{animation-name:price-transition;animation-duration:500ms;animation-fill-mode:forwards;width:10%}main section a:hover .checked{display:initial;animation-name:check;animation-duration:500ms}main section a:hover .checked i{animation-name:check-rotate;animation-duration:500ms;animation-delay:250ms}main .entrees>a{opacity:0;animation:appear 1500ms 500ms;animation-fill-mode:forwards}main .plats>a{opacity:0;animation:appear 1500ms 750ms;animation-fill-mode:forwards}main .desserts>a{opacity:0;animation:appear 1500ms 1000ms;animation-fill-mode:forwards}main .btn{width:50%;margin:50px auto;margin-bottom:0}footer{background-color:#353535;color:white;padding:20px 5%}footer h3{font-family:Shrikhand,sans-serif;padding:20px 0;font-weight:300}footer li{padding-bottom:6px}footer li .fa-hands-helping{margin-right:8px}footer li a{color:white}footer li i{font-size:15px;margin-right:14px}@media only screen and (min-width:768px){main section{display:flex;flex-wrap:wrap;justify-content:space-between}main section h3{width:100%}main section a{width:49%}.footer{display:flex;justify-content:space-between;padding:0 5%;padding-top:25px}.footer h3{font-size:2.4em}}@media only screen and (min-width:1024px){main section{display:flex;flex-wrap:wrap;justify-content:space-between}main section a{width:32%}main .btn{width:200px}.footer{flex-direction:column;align-items:center}.footer ul{margin-top:15px;width:100%;display:flex;justify-content:space-around}}
+/* Liens externes*/
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import "../css/reset.css";
+main section, main .titre {
+  width: 90%;
+  margin: auto;
+}
+
+main .btn {
+  display: block;
+  color: #fff;
+  border-radius: 2em;
+  padding: 18px 5px;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  transition-duration: 200ms;
+}
+main .btn:hover {
+  background: linear-gradient(170deg, #ff93e1, #a16be0);
+  box-shadow: 0px 5px 15px #9c9c9c;
+}
+
+main .titre .coeur .fas {
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0;
+}
+main .titre .coeur .fas, main .titre .coeur .far {
+  transition-duration: 600ms;
+}
+main .titre .coeur:hover .fas {
+  opacity: 1;
+}
+main .titre .coeur:hover .far {
+  opacity: 0;
+}
+
+main section, main .titre {
+  width: 90%;
+  margin: auto;
+}
+
+main .btn {
+  display: block;
+  color: #fff;
+  border-radius: 2em;
+  padding: 18px 5px;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  transition-duration: 200ms;
+}
+main .btn:hover {
+  background: linear-gradient(170deg, #ff93e1, #a16be0);
+  box-shadow: 0px 5px 15px #9c9c9c;
+}
+
+main .titre .coeur .fas {
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0;
+}
+main .titre .coeur .fas, main .titre .coeur .far {
+  transition-duration: 600ms;
+}
+main .titre .coeur:hover .fas {
+  opacity: 1;
+}
+main .titre .coeur:hover .far {
+  opacity: 0;
+}
+
+/* ANIMATIONS */
+/*Animations Loader*/
+@keyframes load {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  80% {
+    transform: rotate(720deg) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(1440deg) scale(2);
+    opacity: 0;
+    display: none;
+  }
+}
+/* Annimation favoris */
+@keyframes favoris {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+/*Animations menu apparition*/
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+/* Annimations selection */
+@keyframes price-transition {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-60px);
+  }
+}
+@keyframes check {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes check-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* GENERAL */
+body {
+  font-family: Roboto, sans-serif;
+}
+
+/* HEADER */
+header .static {
+  display: flex;
+  padding: 17px 0 9px 0;
+}
+header .static h1 {
+  font-weight: 100;
+  font-size: 31px;
+  margin: auto;
+}
+header .static a {
+  font-family: Shrikhand, sans-serif;
+}
+header .static i {
+  font-size: 1.2em;
+  position: absolute;
+  left: 22px;
+  top: 25px;
+}
+header img {
+  height: 220px;
+  width: 100%;
+  position: relative;
+  object-fit: cover;
+}
+
+/* MAIN */
+main {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: -48px;
+  background-color: #f6f6f6;
+  border-top-left-radius: 3em;
+  border-top-right-radius: 3em;
+}
+main .titre {
+  display: flex;
+}
+main .titre h2 {
+  font-family: Shrikhand, sans-serif;
+  font-weight: 100;
+  width: 80%;
+}
+main .titre .coeur {
+  position: relative;
+  width: 20%;
+}
+main .titre .coeur i {
+  font-size: 1.3em;
+  position: absolute;
+  top: 8px;
+  right: 0px;
+}
+main section h3 {
+  font-size: 1em;
+  font-weight: 100;
+  margin-top: 40px;
+}
+main section hr {
+  width: 40px;
+  border: 0;
+  border-top: 3px solid #99E2D0;
+  margin-right: 1000px;
+}
+main section a {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 71px;
+  padding: 12px 0px 10px 7px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 5px rgb(206, 206, 206);
+  overflow: hidden;
+  text-decoration: none;
+  color: #000;
+  margin-top: 20px;
+}
+main section a .texte {
+  overflow: hidden;
+  width: 85%;
+}
+main section a .texte h5 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+main section a .texte p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.9em;
+  font-weight: 100;
+}
+main section a .prix {
+  position: absolute;
+  right: 8px;
+  flex-shrink: 0;
+  margin: 24px 6px 0 10px;
+  font-weight: bold;
+  font-size: 0.95em;
+}
+main section a .checked {
+  display: none;
+  box-shadow: none;
+  color: white;
+  height: 72px;
+  line-height: 72px;
+  width: 60px;
+  background-color: #99E2D0;
+  text-align: center;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  margin-top: -11.7px;
+  transform-origin: 100% 50%;
+}
+main section a .checked i {
+  font-size: 1.2em;
+}
+main section a:hover .texte p {
+  width: 75%;
+}
+main section a:hover .prix {
+  animation-name: price-transition;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  width: 10%;
+}
+main section a:hover .checked {
+  display: initial;
+  animation-name: check;
+  animation-duration: 500ms;
+}
+main section a:hover .checked i {
+  animation-name: check-rotate;
+  animation-duration: 500ms;
+  animation-delay: 250ms;
+}
+main .entrees > a {
+  opacity: 0;
+  animation: appear 1500ms 500ms;
+  animation-fill-mode: forwards;
+}
+main .plats > a {
+  opacity: 0;
+  animation: appear 1500ms 750ms;
+  animation-fill-mode: forwards;
+}
+main .desserts > a {
+  opacity: 0;
+  animation: appear 1500ms 1000ms;
+  animation-fill-mode: forwards;
+}
+main .btn {
+  width: 50%;
+  margin: 50px auto;
+  margin-bottom: 0px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 20px 5%;
+}
+footer h3 {
+  font-family: Shrikhand, sans-serif;
+  padding: 20px 0;
+  font-weight: 300;
+}
+footer li {
+  padding-bottom: 6px;
+}
+footer li .fa-hands-helping {
+  margin-right: 8px;
+}
+footer li a {
+  color: white;
+}
+footer li i {
+  font-size: 15px;
+  margin-right: 14px;
+}
+
+@media only screen and (min-width: 768px) {
+  main section .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  main section h3 {
+    width: 100%;
+  }
+  main section a {
+    width: 49%;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    padding-top: 25px;
+  }
+  .footer h3 {
+    font-size: 2.4em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  main section .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  main section .cards a {
+    width: 33%;
+  }
+  main .btn {
+    width: 200px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer ul {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+/*# sourceMappingURL=menu.css.map */
