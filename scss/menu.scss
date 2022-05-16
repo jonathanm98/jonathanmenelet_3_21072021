@@ -168,17 +168,17 @@ main {
     }
   }
 
-  .entrees > a {
+  .entrees .cards > a {
     opacity: 0;
     animation: appear 1500ms 500ms;
     animation-fill-mode: forwards;
   }
-  .plats > a {
+  .plats .cards > a {
     opacity: 0;
     animation: appear 1500ms 750ms;
     animation-fill-mode: forwards;
   }
-  .desserts > a {
+  .desserts .cards > a {
     opacity: 0;
     animation: appear 1500ms 1000ms;
     animation-fill-mode: forwards;

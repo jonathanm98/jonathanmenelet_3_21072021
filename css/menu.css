@@ -298,17 +298,17 @@ main section a:hover .checked i {
   animation-duration: 500ms;
   animation-delay: 250ms;
 }
-main .entrees > a {
+main .entrees .cards > a {
   opacity: 0;
   animation: appear 1500ms 500ms;
   animation-fill-mode: forwards;
 }
-main .plats > a {
+main .plats .cards > a {
   opacity: 0;
   animation: appear 1500ms 750ms;
   animation-fill-mode: forwards;
 }
-main .desserts > a {
+main .desserts .cards > a {
   opacity: 0;
   animation: appear 1500ms 1000ms;
   animation-fill-mode: forwards;
